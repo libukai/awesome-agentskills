@@ -16,13 +16,13 @@
   </a>
 </p>
 
-欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，共同迎接普惠式智能体时代的的到来。
+欢迎来到 Agent Skills 新世界！本项目致力于汇集和分享最优质的 Agent Skills 相关资源、教程和实践，帮助更多普通人用好这个强大的 AI 工具。
 
 > 关注我的 X 账号 [@李不凯正在研究](https://x.com/libukai) ，即时获取有关 Agent Skills 的最新资讯和实用教程！
 
 ## 快速入门
 
-Agent Skills 是一个由 Anthropic 维护的 [开放标准](https://agentskills.io/home)，能便捷地将个人经验转化为 AI 可用的 Skill，快速构建定制化和轻量级的 Agent。
+Agent Skills 是一个由 Anthropic 维护的 [开放标准](https://agentskills.io/home)，能便捷地将个人经验转化为 AI Skill，快速轻量级的 Personal Agent。
 
 -   [别再当"复读机"了：Claude Code 新王炸功能 Skills 深度研究](https://mp.weixin.qq.com/s/vQkekUtdqF5BJhSVNMU__g)
 -   [Cherry Studio + Claude Code：日常工作类 Agent Skills 最佳实践](https://mp.weixin.qq.com/s/nqBMW9QaTcagohzy2gXaZA)
