@@ -46,7 +46,7 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Git
 -   [anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator): Anthropic 官方出品用于创建 skill 的 skill，可快速创建个人专属的 Agent Skills
 -   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 集合，可处理 Office 全系文档格式
 -   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的集合
--   [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills): 包含多种实用编程技能的集合
+-   [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills): 包含完整编程项目工作流程的技能集合
 
 ## 配套工具
 
@@ -65,6 +65,7 @@ Anthropic 在官方博客中提供了丰富的 Agent Skills 相关教程，推�
 -   [https://www.anthropic.com/engineering/code-execution-with-mcp](https://www.anthropic.com/engineering/code-execution-with-mcp)
 -   [Improving frontend design through Skills](https://claude.com/blog/improving-frontend-design-through-skills#real-world-skills-examples)
 
-## 优质教程
+## 参考资料
 
+-   [Don't Build Agents, Build Skills Instead](https://x.com/iamzhihui/status/2005883147305500681/photo/1)
 -   [Claude Agent Skills：第一性原理深度解析](https://skills.deeptoai.com/zh/docs/ai-ml/claude-agent-skills-first-principles-deep-dive)
