@@ -31,11 +31,11 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Mic
 -   [Cursor](https://cursor.com/cn/docs/context/skills)：在 Cursor 中使用 Agent Skills 的说明文档
 
 > [!WARNING]
-> 阿里旗下的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异
+> 阿里旗下的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异，详情参见 [官方文档](https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/)
 
 ## 技能商店
 
--   [skillsmp](https://skillsmp.com/zh)：Agent Skills 在线商店，汇总了 Github 上的所有的 Skill 项目
+-   [skillsmp](https://skillsmp.com/zh)：Agent Skills 在线商店，汇总了 Github 上的所有的 Skills 项目
 
 ## 技能仓库
 
