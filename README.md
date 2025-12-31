@@ -9,14 +9,14 @@
     <img src="https://awesome.re/badge.svg" alt="Awesome" />
   </a>
   <a href="https://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="Issues Welcome" />
+    <img src="https://img.shields.io/badge/Issues-welcome-brightgreen.svg?style=flat-square" alt="Issues Welcome" />
   </a>
   <a href="https://www.apache.org/licenses/LICENSE-2.0">
     <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square" alt="License: Apache-2.0" />
   </a>
 </p>
 
-欢迎来到 Agent Skills 新世界！本项目致力于汇集和分享最优质的 Agent Skills 相关资源、教程和实践，帮助更多普通人用好这个强大的 AI 工具。
+欢迎来到 Agent Skills 新世界！本项目致力于汇集和分享最优质的 Agent Skills 相关资源、教程和实践，欢迎通过 Issues 提交自己的作品。
 
 > 关注我的 X 账号 [@李不凯正在研究](https://x.com/libukai) ，即时获取有关 Agent Skills 的最新资讯和实用教程！
 
