@@ -32,10 +32,8 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Mic
 -   [Microsoft/VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)：在 VS Code 中使用 Agent Skills 的说明文档
 -   [Cursor](https://cursor.com/cn/docs/context/skills)：在 Cursor 中使用 Agent Skills 的说明文档
 
-测试分割
-
-> [!WARNING]
-> 阿里旗下的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异，相关文档请参考 [官方文档](https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/)
+> [!TIP]
+> 阿里旗下的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异
 
 ## 技能商店
 
