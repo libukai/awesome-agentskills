@@ -39,7 +39,7 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Git
 
 Anthropic 在官方博客中提供了丰富的 Agent Skills 相关教程，推荐阅读以下文章以深入了解 Agent Skills 的概念、创建方法和应用场景：
 
--   [Introducing Agent Skills](https://claude.com/blog/skills)
+-   [Introducing Agent Skills: Improve how it performs specific tasks](https://claude.com/blog/skills)
 -   [Skills explained: How Skills compares to prompts, Projects, MCP, and subagents](https://claude.com/blog/skills-explained)
 -   [Extending Claude’s capabilities with skills and MCP servers](https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers)
 -   [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
@@ -49,11 +49,9 @@ Anthropic 在官方博客中提供了丰富的 Agent Skills 相关教程，推�
 
 ## 技能商店
 
-![skillsmp](assets/skillsmp.png)
+[![skillsmp](assets/skillsmp.png)](https://skillsmp.com/zh)
 
-推荐且仅推荐 [skillsmp](https://skillsmp.com/zh) 这一个 Agent Skills 在线商店。
-
-该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理，用户可以方便地浏览、搜索和下载所需的 Skills。
+推荐且仅推荐 [skillsmp](https://skillsmp.com/zh) 这一个 Agent Skills 在线商店。该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理，用户可以方便地浏览、搜索和下载所需的 Skills。
 
 ## 技能精选
 
