@@ -18,27 +18,32 @@
 </p>
 <div>
 
-欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，帮助普通人更好地将个人经验转化为 Skill，构建专属的个性化 Agent。
+欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，帮助普通人更便捷地将个人经验转化为 Skill，构建专属的个性化 Agent。
 
 > 欢迎关注我的 X 账号 [@李不凯正在研究](https://x.com/libukai) ，即时获取有关 Agent Skills 的最新资讯和实用教程！
-
-## Table of Contents:
 
 ## 标准&文档
 
 Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Microsoft/Cursor 等多家 AI 行业领军公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
 
 -   [Agentskills.io](https://agentskills.io/home)：Agent Skills 开放标准官方网站
--   [Anthropic/Claude Code](https://claude.com/skills)：Anthropic 版本的 Skills 说明文档
--   [OpenAI/Codex](https://developers.openai.com/codex/skills/)： OpenAI 版本的 Skills 说明文档
+-   [Anthropic/Claude Code](https://claude.com/skills)： 在 Claude Code 中使用 Skills 的说明文档
+-   [OpenAI/Codex](https://developers.openai.com/codex/skills/)： 在 Codex 中使用 Skills 的说明文档
 -   [Microsoft/VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)：在 VS Code 中使用 Agent Skills 的说明文档
--   [Cursor](https://cursor.com/cn/docs/context/skills)：在 Cursor 版本中使用 Agent Skills 的说明文档
+-   [Cursor](https://cursor.com/cn/docs/context/skills)：在 Cursor 中使用 Agent Skills 的说明文档
 
 > [!WARNING]
-> 阿里出品的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异
-> 相关文档请参考 [官方文档](https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/)
+> 阿里旗下的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异，相关文档请参考 [官方文档](https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/)
+
+## 技能商店
+
+-   [skillsmp](https://skillsmp.com/zh)：Agent Skills 在线商店，汇总了 Github 上的所有的 Skill 项目
 
 ## 技能仓库
 
--   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 版本的 Skills 示例和教程
--   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：一个收集了各种 Claude Skills 的仓库
+-   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 仓库，包含 Office 全系文档处理技能
+-   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的仓库
+
+## 辅助工具
+
+-   [numman-ali/openskills](https://github.com/numman-ali/openskills)：创建和管理 Agent Skills 的开源工具包
