@@ -16,13 +16,21 @@
   </a>
 </p>
 
-欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，帮助普通人更便捷地将个人经验转化为 Skill，构建专属的个性化 Agent。
+欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，共同迎接普惠式智能体时代的的到来。
 
-> 欢迎关注我的 X 账号 [@李不凯正在研究](https://x.com/libukai) ，即时获取有关 Agent Skills 的最新资讯和实用教程！
+> 关注我的 X 账号 [@李不凯正在研究](https://x.com/libukai) ，即时获取有关 Agent Skills 的最新资讯和实用教程！
 
-## 使用说明
+## 快速入门
 
-Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，正迅速被各个主流 AI 产品采用，用于快速构建轻量级且个性化的 Agent。
+Agent Skills 是一个由 Anthropic 维护的开放标准，能便捷地将个人经验转化为 AI 技能，快速构建个人定制化的 Agent。
+
+-   [别再当"复读机"了：Claude Code 新王炸功能 Skills 深度研究](https://mp.weixin.qq.com/s/vQkekUtdqF5BJhSVNMU__g)
+-   [Cherry Studio + Claude Code：日常工作类 Agent Skills 最佳实践](https://mp.weixin.qq.com/s/nqBMW9QaTcagohzy2gXaZA)
+-   [Claude Agent Skills：第一性原理深度解析](https://skills.deeptoai.com/zh/docs/ai-ml/claude-agent-skills-first-principles-deep-dive)
+
+## 产品使用
+
+Agent Skills 开放标准已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，迅速被各个主流 AI 产品采用
 
 ![Partner](assets/partners.png)
 
@@ -68,4 +76,3 @@ Anthropic 在官方博客中提供了丰富的 Agent Skills 相关教程，推�
 ## 参考资料
 
 -   [Don't Build Agents, Build Skills Instead](https://x.com/iamzhihui/status/2005883147305500681/photo/1)
--   [Claude Agent Skills：第一性原理深度解析](https://skills.deeptoai.com/zh/docs/ai-ml/claude-agent-skills-first-principles-deep-dive)
