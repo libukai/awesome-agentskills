@@ -46,6 +46,11 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Git
 -   [anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator): Anthropic 官方出品用于创建 skill 的 skill，可快速创建个人专属的 Agent Skills
 -   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 集合，可处理 Office 全系文档格式
 -   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的集合
+-   [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills): 包含多种实用编程技能的集合
+
+## 配套工具
+
+-   [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers): 自动化抓取文档网站、GitHub 仓库和 PDF 文件转换为 Agent Skills
 
 ## 官方教程
 
