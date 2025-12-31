@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://platform.composio.dev/?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills">
-  <img width="1280" height="640" alt="Composio banner" src="./assets/awesome-agent-skills.png">
+  <img width="1280" height="640" alt="Composio banner" src="assets/awesome-agent-skills.png">
   </a>
 </p>
 
@@ -22,12 +22,14 @@
 
 ## 使用说明
 
-Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Microsoft/Cursor 等多家 AI 行业领军公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
+Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
+
+![Partner](assets/partner.png)
 
 -   [Agentskills.io](https://agentskills.io/home)：Agent Skills 开放标准官方网站
 -   [Anthropic/Claude Code](https://claude.com/skills)： 在 Claude Code 中使用 Skills 的说明文档
 -   [OpenAI/Codex](https://developers.openai.com/codex/skills/)： 在 Codex 中使用 Skills 的说明文档
--   [Microsoft/VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)：在 VS Code 中使用 Agent Skills 的说明文档
+-   [Github/VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)：在 VS Code 中使用 Agent Skills 的说明文档
 -   [Cursor](https://cursor.com/cn/docs/context/skills)：在 Cursor 中使用 Agent Skills 的说明文档
 
 > [!WARNING]
