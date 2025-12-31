@@ -35,6 +35,18 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Git
 > [!WARNING]
 > 阿里旗下的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异，详情参见 [官方文档](https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/)
 
+## 技能商店
+
+[![skillsmp](assets/skillsmp.png)](https://skillsmp.com/zh)
+
+推荐且仅推荐 [skillsmp](https://skillsmp.com/zh) 这一个 Agent Skills 在线商店。该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理，用户可以方便地浏览、搜索和下载所需的 Skills。
+
+## 技能精选
+
+-   [anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator): Anthropic 官方出品用于创建 skill 的 skill，可快速创建个人专属的 Agent Skills
+-   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 集合，可处理 Office 全系文档格式
+-   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的集合
+
 ## 官方教程
 
 Anthropic 在官方博客中提供了丰富的 Agent Skills 相关教程，推荐阅读以下文章以深入了解 Agent Skills 的概念、创建方法和应用场景：
@@ -44,20 +56,10 @@ Anthropic 在官方博客中提供了丰富的 Agent Skills 相关教程，推�
 -   [Extending Claude’s capabilities with skills and MCP servers](https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers)
 -   [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
 -   [How to create Skills: Key steps, limitations, and examples](https://claude.com/blog/how-to-create-skills-key-steps-limitations-and-examples)
--   [Improving frontend design through Skills](https://claude.com/blog/improving-frontend-design-through-skills#real-world-skills-examples)
 -   [Building Skills for Claude Code: Automating your procedural knowledge](https://claude.com/blog/building-skills-for-claude-code)
+-   [https://www.anthropic.com/engineering/code-execution-with-mcp](https://www.anthropic.com/engineering/code-execution-with-mcp)
+-   [Improving frontend design through Skills](https://claude.com/blog/improving-frontend-design-through-skills#real-world-skills-examples)
 
-## 技能商店
+## 优质教程
 
-[![skillsmp](assets/skillsmp.png)](https://skillsmp.com/zh)
-
-推荐且仅推荐 [skillsmp](https://skillsmp.com/zh) 这一个 Agent Skills 在线商店。该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理，用户可以方便地浏览、搜索和下载所需的 Skills。
-
-## 技能精选
-
--   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 仓库，包含 Office 全系文档处理技能
--   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的仓库
-
-## 辅助工具
-
--   [numman-ali/openskills](https://github.com/numman-ali/openskills)：创建和管理 Agent Skills 的开源工具包
+-   [Claude Agent Skills：第一性原理深度解析](https://skills.deeptoai.com/zh/docs/ai-ml/claude-agent-skills-first-principles-deep-dive)
