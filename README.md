@@ -22,7 +22,7 @@
 
 ## 快速入门
 
-Agent Skills 是一个由 Anthropic 维护的开放标准，能便捷地将个人经验转化为 AI 技能，快速构建个人定制化的 Agent。
+Agent Skills 是一个由 Anthropic 维护的 [开放标准](https://agentskills.io/home)，能便捷地将个人经验转化为 AI 可用的 Skill，快速构建定制化和轻量级的 Agent。
 
 -   [别再当"复读机"了：Claude Code 新王炸功能 Skills 深度研究](https://mp.weixin.qq.com/s/vQkekUtdqF5BJhSVNMU__g)
 -   [Cherry Studio + Claude Code：日常工作类 Agent Skills 最佳实践](https://mp.weixin.qq.com/s/nqBMW9QaTcagohzy2gXaZA)
@@ -30,11 +30,10 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，能便捷地将个�
 
 ## 产品使用
 
-Agent Skills 开放标准已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，迅速被各个主流 AI 产品采用
+Agent Skills 开放标准已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，迅速被各个主流 AI 产品采用。
 
 ![Partner](assets/partners.png)
 
--   [Agentskills.io](https://agentskills.io/home)：Agent Skills 开放标准官方网站
 -   [Anthropic/Claude Code](https://claude.com/skills)： 在 Claude Code 中使用 Skills 的说明文档
 -   [OpenAI/Codex](https://developers.openai.com/codex/skills/)： 在 Codex 中使用 Skills 的说明文档
 -   [Github/VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)：在 VS Code 中使用 Agent Skills 的说明文档
