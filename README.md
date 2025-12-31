@@ -18,20 +18,18 @@
 </p>
 <div>
 
-欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，帮助普通人更好地将个人经验转化为 AI Skill， 快速构建每个人的个性化 Agent。
-
-Agent Skills 是一个由 Anthropic 维护的开放标准，目前已得到 OpenAI/Microsoft 等多家领先 AI 公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
+欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，帮助普通人更好地将个人经验转化为 Skill，构建专属的个性化 Agent。
 
 > 欢迎关注我的 X 账号 [@李不凯正在研究](https://x.com/libukai) ，即时获取有关 Agent Skill 的最新资讯和实用教程！
 
 ## Table of Contents:
 
-## 开放标准
+## 标准&文档
+
+Agent Skills 是一个由 Anthropic 维护的开放标准，目前已得到 OpenAI/Microsoft 等多家领先 AI 公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
 
 -   [官方网站](https://agentskills.io/home)：Agent Skills 的官方网站
--   [GitHub 仓库](https://github.com/AgentSkills/AgentSkills)：Agent Skills 的官方 GitHub 仓库
-
-## 厂商实现
+-   [官方仓库](https://github.com/AgentSkills/AgentSkills)：Agent Skills 的官方 GitHub 仓库
 
 ### Anthropic/Claude Code
 
