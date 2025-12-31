@@ -2,7 +2,7 @@
 
 欢迎来到 Agent Skills 的世界！本仓库致力于汇集和分享与 Agent Skills 相关的资源、工具和最佳实践，帮助普通人更好地将个人工作经验转化为 AI 可学习的技能。
 
-> [!TIP] 术语说明
+> [!TIP]
 > Agent Skills 是一个由 Anthropic 维护的开放标准，目前已得到 OpenAI/Microsoft 等多家领先 AI 公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
 
 ## Table of Contents:
@@ -28,6 +28,6 @@
 
 -   [官方文档](https://code.visualstudio.com/docs/copilot/customization/agent-skills)：在 VS Code 中使用 Agent Skills 的说明文档。
 
-> [!TIP] 术语说明
+> [!WARNING]
 > Ali/Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是私有化标准，与 Agent Skills 开放标准存在差异。
 > 相关文档请参考 [官方文档](https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/)
