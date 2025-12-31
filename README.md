@@ -22,7 +22,7 @@
 
 ## 使用说明
 
-Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
+Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，正迅速被各个主流 AI 产品采用，用于快速构建轻量级且个性化的 Agent。
 
 ![Partner](assets/partners.png)
 
@@ -34,6 +34,18 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Git
 
 > [!WARNING]
 > 阿里旗下的 Qwen Code 从 0.6.0 版本开始实验性支持技能，但采用的是专有标准，与 Agent Skills 开放标准存在差异，详情参见 [官方文档](https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/)
+
+## 官方教程
+
+Anthropic 在官方博客中提供了丰富的 Agent Skills 相关教程，推荐阅读以下文章以深入了解 Agent Skills 的概念、创建方法和应用场景：
+
+-   [Introducing Agent Skills](https://claude.com/blog/skills)
+-   [Skills explained: How Skills compares to prompts, Projects, MCP, and subagents](https://claude.com/blog/skills-explained)
+-   [Extending Claude’s capabilities with skills and MCP servers](https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers)
+-   [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
+-   [How to create Skills: Key steps, limitations, and examples](https://claude.com/blog/how-to-create-skills-key-steps-limitations-and-examples)
+-   [Improving frontend design through Skills](https://claude.com/blog/improving-frontend-design-through-skills#real-world-skills-examples)
+-   [Building Skills for Claude Code: Automating your procedural knowledge](https://claude.com/blog/building-skills-for-claude-code)
 
 ## 技能商店
 
