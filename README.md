@@ -24,7 +24,7 @@
 
 Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Github/Cursor 等多家 AI 行业领军公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
 
-![Partner](assets/partner.png)
+![Partner](assets/partners.png)
 
 -   [Agentskills.io](https://agentskills.io/home)：Agent Skills 开放标准官方网站
 -   [Anthropic/Claude Code](https://claude.com/skills)： 在 Claude Code 中使用 Skills 的说明文档
