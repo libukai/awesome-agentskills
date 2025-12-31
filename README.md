@@ -20,7 +20,7 @@
 
 > 欢迎关注我的 X 账号 [@李不凯正在研究](https://x.com/libukai) ，即时获取有关 Agent Skills 的最新资讯和实用教程！
 
-## 标准&文档
+## 使用说明
 
 Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Microsoft/Cursor 等多家 AI 行业领军公司的支持，正迅速成为被广泛使用的轻量级 Agent 构建框架。
 
@@ -35,9 +35,13 @@ Agent Skills 是一个由 Anthropic 维护的开放标准，已得到 OpenAI/Mic
 
 ## 技能商店
 
--   [skillsmp](https://skillsmp.com/zh)：Agent Skills 在线商店，汇总了 Github 上的所有的 Skills 项目
+![skillsmp](assets/skillsmp.png)
 
-## 技能仓库
+推荐且仅推荐 [skillsmp](https://skillsmp.com/zh) 这一个 Agent Skills 在线商店。
+
+该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理，用户可以方便地浏览、搜索和下载所需的 Skills。
+
+## 技能精选
 
 -   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 仓库，包含 Office 全系文档处理技能
 -   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的仓库
