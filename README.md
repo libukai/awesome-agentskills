@@ -54,6 +54,7 @@ Agent Skills 开放标准已得到 OpenAI/Github/Cursor 等多家 AI 行业领�
 -   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 集合，可处理 Office 全系文档格式
 -   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的集合
 -   [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills): 包含完整编程项目工作流程的技能集合
+-   [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 面向科研工作者的 Skill 集合
 
 ## 配套工具
 
