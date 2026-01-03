@@ -44,17 +44,18 @@ Agent Skills 开放标准已得到 OpenAI/Github/Cursor 等多家 AI 行业领�
 
 ## 技能商店
 
-[![skillsmp](assets/skillsmp.png)](https://skillsmp.com/zh)
+-   [![skillsmp](assets/skillsmp.png)](https://skillsmp.com/zh)
 
-推荐且仅推荐 [skillsmp](https://skillsmp.com/zh) 这一个 Agent Skills 在线商店。该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理，用户可以方便地浏览、搜索和下载所需的 Skills。
+仅推荐 [skillsmp](https://skillsmp.com/zh) 这一个 Agent Skills 在线商店。该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理，用户可以方便地浏览、搜索和下载所需的 Skills。
 
-## 技能精选
+## 精选技能
 
--   [anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator): Anthropic 官方出品用于创建 skill 的 skill，可快速创建个人专属的 Agent Skills
+-   [anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator): Anthropic 官方出品用于创建 skill 的元 skill，可快速创建个人专属的 Agent Skills
 -   [anthropics/skills](https://github.com/anthropics/skills)：Anthropic 官方出品的 Skills 集合，可处理 Office 全系文档格式
--   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类优质 Skills 的集合
--   [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills): 包含完整编程项目工作流程的技能集合
--   [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 面向科研工作者的 Skill 集合
+-   [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills): 涵盖完整编程项目工作流程的 Skills 集合
+-   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：涵盖多个编程类任务的优质 Skills 集合
+-   [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：面向 UI/UX 设计的 Skills 集合
+-   [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 面向科研工作者的 Skills 集合
 
 ## 配套工具
 
