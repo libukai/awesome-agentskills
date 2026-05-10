@@ -266,6 +266,7 @@ gh skill publish                                 # Validate and publish a Skill
 -   [n8n](https://github.com/czlonkowski/n8n-skills): Create n8n workflows
 -   [threejs](https://github.com/cloudai-x/threejs-skills): Assist with Three.js development
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage): Manage local Skills across multiple agent hosts
+-   [x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper): Agent Skill for structured X/Twitter search, timelines, follower exports, media, webhooks, and confirmation-gated publishing
 
 ### Other Types
 
