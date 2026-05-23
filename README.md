@@ -244,6 +244,7 @@ skillhub upgrade # 升级已安装的技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [flowhunt-skill](https://github.com/heyneuron/flowhunt-skill)：自动化发现审计，通过五问工作流问卷扫描 Gmail、日历、Slack 和任务追踪器，生成自动化机会报告
 
 
 ## 安全审查
