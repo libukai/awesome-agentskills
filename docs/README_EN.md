@@ -244,6 +244,7 @@ skillhub upgrade                  # Upgrade installed skills
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide startup advice from a YC perspective
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
+-   [flowhunt-skill](https://github.com/heyneuron/flowhunt-skill): Automation discovery audit — walks through a 5-question workflow intake and audits Gmail, Calendar, Slack, and task trackers to surface automation opportunities
 
 ## Security Audit
 
