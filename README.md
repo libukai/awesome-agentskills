@@ -241,6 +241,7 @@ skillhub upgrade # 升级已安装的技能
 ### 其他类型
 
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
+-   [Alpha Insights](https://github.com/Ericyoung-183/alpha-insights)：商业分析与研究 Skill，将咨询方法论、研究框架和证据门控封装为 Claude Code / Codex 可用的结构化研究工作流
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
