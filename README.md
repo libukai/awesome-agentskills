@@ -239,6 +239,8 @@ skillhub upgrade # 升级已安装的技能
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 
 ### 其他类型
+-   [openclaw-monitor](https://github.com/flik2002/openclaw-monitor)：OpenClaw AI 智能体监控面板，支持 token 用量、会话追踪、7 天趋势图
+
 
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
