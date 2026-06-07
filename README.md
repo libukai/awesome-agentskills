@@ -151,7 +151,7 @@ skillhub upgrade # 升级已安装的技能
 <tr>
 <td><a href="https://github.com/elevenlabs/skills">elevenlabs</a></td>
 <td><a href="https://github.com/black-forest-labs/skills">black-forest-labs</a></td>
-<td></td>
+<td><a href="https://github.com/runapi-ai/cli-skill">runapi</a></td>
 <td></td>
 <td></td>
 </tr>
