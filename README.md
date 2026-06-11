@@ -214,6 +214,7 @@ skillhub upgrade # 升级已安装的技能
 ### 编程开发
 
 -   [superpowers](https://github.com/obra/superpowers)：涵盖完整编程项目工作流程
+-   [ariadne-loop](https://github.com/zhangzeyu99-web/ariadne-loop)：面向 Codex、Claude Code、OpenClaw 等编码 Agent 的 Loop Engineering 规格、验证门禁和交接包生成工具
 -   [frontend-design](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design)：前端设计技能
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：更精致和个性化的 UI/UX 设计
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：代码审查技能
