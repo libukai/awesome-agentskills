@@ -64,6 +64,8 @@ Skill 可以在 Claude 和 ChatGPT 这类 GUI 的 App 中使用，也可以在 C
 
 对于官方商店中没有的 Skill，可以从下方推荐的 Skill 第三方商店中下载并手动上传安装。
 
+-   [CreatorSkills](https://creatorskills.co)：专为内容创作者打造的 AI 技能市场，提供 YouTube 脚本写作、赞助商分析和受众增长等 30+ 款下载即用技能，支持 Claude 和 ChatGPT
+
 ### 类 Claude Code 生态
 
 ![](assets/media/skills_mp.png)
