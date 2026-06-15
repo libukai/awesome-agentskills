@@ -236,6 +236,7 @@ skillhub upgrade # 升级已安装的技能
 -   [wps](https://github.com/wpsnote/wpsnote-skills)：操控 WPS 办公软件
 -   [notebooklm](https://github.com/teng-lin/notebooklm-py)：操控 NotebookLM 
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：创建 n8n 工作流
+-   [html2link-publish](https://github.com/joohw/html2link-skill)：将 HTML、Markdown、PDF、表格、DOCX、PPTX 和静态站点发布成可分享短链接
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 
 ### 其他类型
