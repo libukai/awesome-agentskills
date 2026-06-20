@@ -215,6 +215,7 @@ skillhub upgrade                  # インストール済みスキルをアッ�
 ### プログラミング開発
 
 -   [superpowers](https://github.com/obra/superpowers)：完全なプログラミングプロジェクトワークフローをカバー
+-   [ax-extract-workflow](https://github.com/Necmttn/ax/tree/main/skills/ax-extract-workflow)：ローカルの ax セッション、コミット、スキル、サブエージェント記録から完了したコーディングエージェントのワークフローを復元
 -   [frontend-design](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design)：フロントエンドデザインスキル
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：より洗練されたパーソナライズされた UI/UX デザイン
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：コードレビュースキル

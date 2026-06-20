@@ -214,6 +214,7 @@ skillhub upgrade # 升级已安装的技能
 ### 编程开发
 
 -   [superpowers](https://github.com/obra/superpowers)：涵盖完整编程项目工作流程
+-   [ax-extract-workflow](https://github.com/Necmttn/ax/tree/main/skills/ax-extract-workflow)：从本地 ax 会话、提交、技能和子代理记录中复盘已交付工作流
 -   [frontend-design](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design)：前端设计技能
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：更精致和个性化的 UI/UX 设计
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：代码审查技能
