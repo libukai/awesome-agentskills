@@ -238,6 +238,10 @@ skillhub upgrade                  # Upgrade installed skills
 -   [n8n](https://github.com/czlonkowski/n8n-skills): Create n8n workflows
 -   [threejs](https://github.com/cloudai-x/threejs-skills): Assist with Three.js development
 
+### Developer Marketing Skills
+
+- [dev-gtm-claude-skills](https://github.com/Infrasity-Labs/dev-gtm-claude-skills): Open-source, cross-platform agent skills for Claude Code and agentskills.io-compatible platforms. These skills are for SEO, GEO (Generative Engine Optimization), AI discoverability, and developer marketing. 
+
 ### Other Types
 
 -  [pua](https://github.com/tanweai/pua): Drive AI to work harder in a PUA style
