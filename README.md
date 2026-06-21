@@ -187,7 +187,7 @@ skillhub upgrade # 升级已安装的技能
 </tr>
 <tr>
 <td><a href="https://github.com/greensock/gsap-skills">gsap</a></td>
-<td></td>
+<td><a href="https://github.com/go165/agent-skill-groups">agent-skill-groups</a></td>
 <td></td>
 <td></td>
 <td></td>
