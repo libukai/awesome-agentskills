@@ -219,6 +219,7 @@ skillhub upgrade # 升级已安装的技能
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：代码审查技能
 -   [code-simplifier](hhttps://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)：代码简化技能
 -   [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands)：Git 提交技能
+-   [ruledoctor](https://github.com/syf2211/ruledoctor/tree/main/skills/ruledoctor)：让 Agent 改代码前先读项目规则
 
 
 ### 内容创作
