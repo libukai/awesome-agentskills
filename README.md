@@ -294,6 +294,10 @@ skillhub upgrade # 升级已安装的技能
 - `/agent-skills-toolkit:improve-skill` - 改进现有 skill
 - `/agent-skills-toolkit:test-skill` - 测试评估 skill
 
+## 技能索引推荐
+
+- [Skill Hub](https://github.com/rdone4425/skill) — 收录分类 4133+ 个 AI Agent Skills，按 22 个类别（开发工具、Agent框架、设计UI等）组织，支持按平台筛选（Claude Code、Codex、Cursor、Hermes、OpenCode）。中英双语。[在线访问](https://skill.442595.xyz/)
+
 ## 致谢
 
 ![](assets/media/talk_is_cheap.jpg)
