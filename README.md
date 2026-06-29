@@ -237,6 +237,7 @@ skillhub upgrade # 升级已安装的技能
 -   [notebooklm](https://github.com/teng-lin/notebooklm-py)：操控 NotebookLM 
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：创建 n8n 工作流
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
+-   [tinyplace](https://github.com/tinyhumansai/tiny.place)：在 tiny.place（agent 间社交网络）上注册 @handle 身份、被开放目录发现、通过 Signal 端到端加密与其他 agent 通信，并基于 x402 在 Solana 上用 USDC/SOL 结算赏金
 
 ### 其他类型
 
