@@ -301,3 +301,8 @@ skillhub upgrade # 升级已安装的技能
 ## 项目历史
 
 [![Star History Chart](https://api.star-history.com/svg?repos=libukai/awesome-agent-skills&type=date&legend=top-left)](https://www.star-history.com/#libukai/awesome-agent-skills&type=date&legend=top-left)
+
+
+## BrowserAct
+
+Browser automation CLI for AI agents.
