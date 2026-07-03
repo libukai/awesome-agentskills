@@ -230,6 +230,7 @@ skillhub upgrade # 升级已安装的技能
 -   [huangserva](https://github.com/huangserva/skill-prompt-generator)：生成和优化 AI 人像文生图提示词
 -   [dontbesilent](https://github.com/dontbesilent2025/dbskill)： X 万粉大V 基于自己的推文制作的内容创作框架
 -   [seekjourney](https://github.com/geekjourneyx/md2wechat-skill/)：从写作到发布的 AI 辅助公众号写作
+-   [linkedin-skills](https://github.com/sergebulaev/linkedin-skills)：面向 LinkedIn 的 10 个 Claude Code 与 Codex 技能，涵盖爆款帖子写作（16 种钩子公式）、评论草拟、AI 痕迹去除、资料优化、内容规划与互动追踪
 
 ### 产品使用
 
