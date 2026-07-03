@@ -213,6 +213,7 @@ skillhub upgrade # 升级已安装的技能
 
 ### 编程开发
 
+-   [ai-meeting-skill](https://github.com/bin1874/ai-meeting-skill)：组织 Codex、Claude 等 AI agent 进行多轮会议讨论，保留各 agent 会话上下文并输出结构化最终报告
 -   [superpowers](https://github.com/obra/superpowers)：涵盖完整编程项目工作流程
 -   [frontend-design](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design)：前端设计技能
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：更精致和个性化的 UI/UX 设计
