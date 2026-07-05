@@ -211,6 +211,7 @@ skillhub upgrade # 升级已安装的技能
 
 ## 精选技能
 
+-  [context-kit](https://github.com/JDDavenport/context-kit)：个人上下文工件（Personal Context Artifacts），4 个 Markdown 模板（wiki、心智模型、语音风格、协议）+ 5 个 Claude Code 技能，解决 AI Agent 的上下文失忆问题，每次会话全量载入个人背景。MIT 许可，一键安装。
 ### 编程开发
 
 -   [superpowers](https://github.com/obra/superpowers)：涵盖完整编程项目工作流程
