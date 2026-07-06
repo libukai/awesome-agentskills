@@ -236,6 +236,7 @@ skillhub upgrade                  # インストール済みスキルをアッ�
 -   [wps](https://github.com/wpsnote/wpsnote-skills)：WPS オフィスソフトを操作
 -   [notebooklm](https://github.com/teng-lin/notebooklm-py)：NotebookLM を操作
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：n8n ワークフローを作成
+-   [routerbase-agent-skills](https://github.com/zenlee123/routerbase-agent-skills)：[routerbase](https://routerbase.com/) を OpenAI 互換ゲートウェイ、モデルルーティング、メディア生成に使用
 -   [threejs](https://github.com/cloudai-x/threejs-skills)：Three.js プロジェクト開発を支援
 
 ### その他

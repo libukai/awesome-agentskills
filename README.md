@@ -236,6 +236,7 @@ skillhub upgrade # 升级已安装的技能
 -   [wps](https://github.com/wpsnote/wpsnote-skills)：操控 WPS 办公软件
 -   [notebooklm](https://github.com/teng-lin/notebooklm-py)：操控 NotebookLM 
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：创建 n8n 工作流
+-   [routerbase-agent-skills](https://github.com/zenlee123/routerbase-agent-skills)：通过 [routerbase](https://routerbase.com/) 使用 OpenAI 兼容网关、模型路由与媒体生成
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 
 ### 其他类型
