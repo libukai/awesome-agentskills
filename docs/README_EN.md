@@ -220,6 +220,7 @@ skillhub upgrade                  # Upgrade installed skills
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review): Code review skills
 -   [code-simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier): Code simplification skills
 -   [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands): Git commit skills
+-   [tree-ring-memory](https://github.com/TerminallyLazy/Tree-Ring-Memory): Local-first memory lifecycle tooling for AI agents, with recall, forgetting, audit, consolidation, and portable Skill docs
 
 ### Content Creation
 

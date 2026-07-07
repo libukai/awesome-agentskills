@@ -220,6 +220,7 @@ skillhub upgrade                  # インストール済みスキルをアッ�
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：コードレビュースキル
 -   [code-simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)：コード簡略化スキル
 -   [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands)：Git コミットスキル
+-   [tree-ring-memory](https://github.com/TerminallyLazy/Tree-Ring-Memory)：AI Agent 向けのローカルファーストなメモリライフサイクルツール。想起、忘却、監査、統合、ポータブルな Skill ドキュメントに対応
 
 ### コンテンツ制作
 

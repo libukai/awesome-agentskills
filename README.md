@@ -219,6 +219,7 @@ skillhub upgrade # 升级已安装的技能
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：代码审查技能
 -   [code-simplifier](hhttps://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)：代码简化技能
 -   [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands)：Git 提交技能
+-   [tree-ring-memory](https://github.com/TerminallyLazy/Tree-Ring-Memory)：面向 AI Agent 的本地优先记忆生命周期工具，支持召回、遗忘、审计、压缩和可移植 Skill 文档
 
 
 ### 内容创作
