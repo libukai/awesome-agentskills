@@ -242,6 +242,7 @@ skillhub upgrade # 升级已安装的技能
 
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
+-   [ditto](https://github.com/ohad6k/ditto)：从真实的 Claude Code、Codex 和 Copilot CLI 会话历史中提炼个人工作、设计和写作偏好，并生成可安装的 Agent Skills
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
 
