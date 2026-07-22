@@ -248,9 +248,13 @@ gh skill publish                                 # 校验并发布技能
 -   [superpowers](https://github.com/obra/superpowers)：涵盖完整编程项目工作流程
 -   [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)：前端设计技能
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：更精致和个性化的 UI/UX 设计
+-   [UIZZE](https://uizze.com)：为 Codex、Claude Code、Cursor、GitHub Copilot 和其他编码 Agent 提供 anti-ui-slop Skill：以 800,000+ 个真实 Web 与 iOS 界面为证据，生成产品特定的设计契约，覆盖完整交互状态，并在发布前执行完成度门禁；免费预览：https://uizze.com/mcp/preview
 -   [archify](https://github.com/tt-a1i/archify)：生成可验证、可导出的架构图与流程图
 -   [text-to-cad](https://github.com/earthtojake/text-to-cad)：面向 CAD、CAE 与 CAM 的工程技能库
 -   [native-feel-skill](https://github.com/yetone/native-feel-skill)：跨平台桌面应用的原生体验设计指南
+-   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：代码审查技能
+-   [code-simplifier](hhttps://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)：代码简化技能
+-   [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands)：Git 提交技能
 
 
 ### 内容创作
