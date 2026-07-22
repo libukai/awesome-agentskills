@@ -230,6 +230,7 @@ skillhub upgrade # 升级已安装的技能
 -   [huangserva](https://github.com/huangserva/skill-prompt-generator)：生成和优化 AI 人像文生图提示词
 -   [dontbesilent](https://github.com/dontbesilent2025/dbskill)： X 万粉大V 基于自己的推文制作的内容创作框架
 -   [seekjourney](https://github.com/geekjourneyx/md2wechat-skill/)：从写作到发布的 AI 辅助公众号写作
+-   [bunnyscholar-api-skill](https://github.com/bunnyscholar/bunnyscholar-api-skill)：让 AI Agent 一步接入论文降重（学术改写）与降 AI 率（拟人改写 / Humanizer）API，适配知网、万方、维普、格子达、Turnitin
 
 ### 产品使用
 
