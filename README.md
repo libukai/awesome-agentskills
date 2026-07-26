@@ -230,6 +230,7 @@ skillhub upgrade # 升级已安装的技能
 -   [huangserva](https://github.com/huangserva/skill-prompt-generator)：生成和优化 AI 人像文生图提示词
 -   [dontbesilent](https://github.com/dontbesilent2025/dbskill)： X 万粉大V 基于自己的推文制作的内容创作框架
 -   [seekjourney](https://github.com/geekjourneyx/md2wechat-skill/)：从写作到发布的 AI 辅助公众号写作
+-   [claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video)：让任何 LLM 真正看懂视频——场景感知抽帧＋带时间戳转录，全本地运行
 
 ### 产品使用
 
