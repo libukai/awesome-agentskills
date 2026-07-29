@@ -219,6 +219,7 @@ skillhub upgrade # 升级已安装的技能
 -   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review)：代码审查技能
 -   [code-simplifier](hhttps://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)：代码简化技能
 -   [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands)：Git 提交技能
+-   [liustack](https://github.com/liustack/liustack)：更轻也更强的 Superpowers 替代，四技能工作闭环（成形、编码、挖根因、快照交接）
 
 
 ### 内容创作
