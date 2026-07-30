@@ -254,7 +254,11 @@ async function main(): Promise<void> {
   await postVideoToX({ text, videoPath, submit, profileDir });
 }
 
-await main().catch((err) => {
-  console.error(`Error: ${err instanceof Error ? err.message : String(err)}`);
-  process.exit(1);
-});
+// Only run the CLI when invoked directly; importing (e.g. from
+// x-video-generate.ts) reuses postVideoToX without launching a browser.
+if (import.meta.main) {
+  await main().catch((err) => {
+    console.error(`Error: ${err instanceof Error ? err.message : String(err)}`);
+    process.exit(1);
+  });
+}

@@ -120,6 +120,7 @@ This automatically:
 | **Publishing Scripts** | |
 | `scripts/x-post.ts` | Publish regular posts (text + images, max 4) |
 | `scripts/x-video.ts` | Publish video posts (text + video) |
+| `scripts/x-video-generate.ts` | Generate a video from a text prompt (MiniMax Hailuo) and hand it to `x-video.ts` |
 | `scripts/x-quote.ts` | Publish quote tweet with comment |
 | `scripts/x-article.ts` | Publish X Articles (rich text + images + code) |
 | **Conversion Scripts** | |
@@ -303,6 +304,58 @@ ${BUN_X} ${SKILL_DIR}/scripts/x-video.ts "Check this out!" --video ./clip.mp4
 | `--profile <dir>` | Custom Chrome profile |
 
 **Limits**: Regular 140s max, Premium 60min. Processing: 30-60s.
+
+---
+
+## Generate Video (Text-to-Video)
+
+Generate a video from a text prompt with MiniMax Hailuo, then hand the downloaded
+clip to the video posting workflow above.
+
+**Step 1: Set credentials**
+
+```bash
+export MINIMAX_API_KEY=<your-key>
+# Optional region override: global_en (default) or cn_zh
+export MINIMAX_API_REGION=global_en
+```
+
+**Step 2: Generate (and optionally post)**
+
+```bash
+# Generate only — saves ./x-video-<task_id>.mp4 for review
+${BUN_X} ${SKILL_DIR}/scripts/x-video-generate.ts --prompt "A cat surfing a wave at sunset"
+
+# Generate and hand off to the X posting workflow
+${BUN_X} ${SKILL_DIR}/scripts/x-video-generate.ts --prompt "Product demo" --post --text "New drop!"
+```
+
+**Parameters**:
+| Parameter | Description |
+|-----------|-------------|
+| `--prompt <text>` | Text prompt for the video (required) |
+| `--model <name>` | Model id (default: `MiniMax-Hailuo-2.3`) |
+| `--region <name>` | Service region: `global_en` (default) or `cn_zh` |
+| `--duration <seconds>` | Requested clip duration |
+| `--resolution <value>` | Requested resolution (e.g. `768P`, `1080P`) |
+| `--prompt-optimizer` / `--no-prompt-optimizer` | Toggle prompt optimization |
+| `--fast-pretreatment` | Enable fast pretreatment |
+| `--output <path>` | Where to save the downloaded video |
+| `--post` | Hand the downloaded video to `x-video.ts` |
+| `--submit` | When posting, actually publish (default: preview only) |
+| `--text <text>` | Post text to use with `--post` |
+
+**How it works**: the script creates a `/v1/video_generation` task, polls
+`/v1/query/video_generation` until the video is ready, retrieves the file via
+`/v1/files/retrieve`, downloads it, and (with `--post`) calls the same
+`postVideoToX` flow used by `x-video.ts`.
+
+**Environment**:
+| Variable | Description |
+|----------|-------------|
+| `MINIMAX_API_KEY` | API key (required) |
+| `MINIMAX_API_REGION` | Overrides `--region` when set |
+| `MINIMAX_API_HOST` | Overrides the region host entirely |
 
 ---
 
