@@ -1,0 +1,129 @@
+name: Submit an ecosystem resource
+description: Suggest an Agent Plugin, Skill, MCP resource, Hook, Marketplace, specification, or tool.
+title: "[Submission]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. A standalone Skill, MCP server, or Hook is welcome, but it is not automatically an Agent Plugin. Please provide evidence for installation and compatibility claims.
+
+  - type: dropdown
+    id: entry_type
+    attributes:
+      label: Entry type
+      options:
+        - Agent Plugin
+        - Agent Skill or Skill collection
+        - MCP resource
+        - Agent Hook or Hook collection
+        - Plugin Marketplace or official collection
+        - Specification, security, or authoring tool
+    validations:
+      required: true
+
+  - type: input
+    id: canonical_url
+    attributes:
+      label: Canonical URL
+      description: Link to the original repository, official documentation, or marketplace entry.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User outcome
+      description: In one or two sentences, what can a user accomplish with this resource?
+    validations:
+      required: true
+
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher and status
+      description: Name the publisher and state whether this is official, vendor-maintained, community-maintained, or archived.
+    validations:
+      required: true
+
+  - type: input
+    id: hosts
+    attributes:
+      label: Supported hosts
+      description: List only hosts documented or tested by the project.
+      placeholder: Codex, Claude Code, Cursor
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: components
+    attributes:
+      label: Included components
+      options:
+        - label: Skills
+        - label: MCP servers or MCP Apps
+        - label: Apps or connectors
+        - label: Agents
+        - label: Commands
+        - label: Hooks
+        - label: LSP servers or monitors
+        - label: UI, assets, templates, or other extensions
+
+  - type: textarea
+    id: install
+    attributes:
+      label: Installation or usage path
+      description: Provide an exact command, marketplace route, upload flow, or documentation link.
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: Source availability and license
+      placeholder: Open source, Apache-2.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance and verification evidence
+      description: Include the latest meaningful release or commit date and what you personally checked, using YYYY-MM-DD.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: risks
+    attributes:
+      label: Known risk surfaces
+      description: Select every known risk surface, or select the final option if none is known after review.
+      options:
+        - label: Executes local code or scripts
+        - label: Installs or runs hooks
+        - label: Uses local or remote MCP servers
+        - label: Requires credentials or external accounts
+        - label: Reads external or private data
+        - label: Can write to external systems
+        - label: Includes closed-source dependencies
+        - label: No known executable or external-access surface
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Disclose limitations, incompatibilities, deprecations, or conflicts of interest.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I used the canonical source and did not submit an unexplained mirror.
+          required: true
+        - label: I did not infer cross-host compatibility from the presence of a SKILL.md file alone.
+          required: true
+        - label: I understand that inclusion does not imply security certification.
+          required: true

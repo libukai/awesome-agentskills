@@ -26,11 +26,90 @@ English | [日本語](README_JA.md) | [简体中文](../README.md)
 
 </div>
 
-This project follows the principle of quality over quantity, collecting and sharing the best Skill resources, tutorials, and practices to help more people take their first step toward building a personalized Agent.
+# Awesome Agent Plugins
 
-> Follow me on 𝕏 [@libukai](https://x.com/libukai) and 💬 WeChat Official Account [@李不凯正在研究](https://mp.weixin.qq.com/s/uer7HvD2Z9ZbJSPEZWHKRA?scene=0&subscene=90) for the latest Skills resources and practical tutorials!
+> **Formerly Awesome Agent Skills.** Agent Skills remain a first-class part of this project as the directory expands into the broader Agent Plugin ecosystem.
 
-## Quick Start
+This project favors quality over quantity. It curates discoverable, installable, and maintainable Agent Plugins, together with the high-quality Skills, MCP servers, apps, agents, commands, and hooks that compose them. The goal is to help developers understand each host's extension model and find capability packages that fit real tasks.
+
+> Follow me on 𝕏 [@libukai](https://x.com/libukai) and 💬 WeChat Official Account [@李不凯正在研究](https://mp.weixin.qq.com/s/uer7HvD2Z9ZbJSPEZWHKRA?scene=0&subscene=90) for the latest Agent Plugin, Agent Skill, and MCP resources and practical tutorials!
+
+## From Skills to Plugins
+
+A plugin is an installation and distribution unit closer to the end user. It may contain a single Skill, or combine task guidance, tool connections, specialized agents, automation hooks, and interactive interfaces into a complete capability package.
+
+Plugin definitions still differ across ecosystems. [Agent Plugins Specification 1.0](https://agent-plugins.org/specification) currently standardizes Skills and MCP servers, while hosts such as Codex, Claude Code, Cursor, GitHub Copilot, and VS Code can also support apps, agents, commands, hooks, LSP servers, and other extensions. This project therefore labels formats and hosts explicitly instead of treating "installable in one host" as "compatible with every agent."
+
+| Concept | Meaning in this project | Listed in the main Plugin directory? |
+| --- | --- | --- |
+| **Plugin** | A capability package with a clear package boundary, installation path, and version source | Yes |
+| **Component** | A Skill, MCP server, app, agent, command, hook, or other individual capability | Only when packaged; otherwise listed in a component directory |
+| **Marketplace** | An index for publishing, discovering, installing, and updating Plugins | Listed as a Marketplace, not as an individual Plugin |
+| **Collection** | An Awesome List, official bundle, or thematic directory | Listed as an ecosystem resource, not as an individual Plugin |
+
+```text
+Agent Plugin
+├── Instructions & knowledge: Skills
+├── Tools & data: MCP Servers, Apps & Connectors
+├── Delegation: Agents
+├── User entry points: Commands
+├── Automation & guardrails: Hooks
+├── Code intelligence: LSP Servers
+└── UI, assets, templates and other host extensions
+```
+
+## Agent Plugin Ecosystem
+
+### Official Plugin Collections and Marketplaces
+
+- [openai/plugins](https://github.com/openai/plugins): Codex plugin examples and official directory entries spanning Skills, apps, MCP servers, agents, commands, hooks, and related surfaces.
+- [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official): Anthropic's official, maintained directory of Claude Code Plugins.
+- [cursor/plugins](https://github.com/cursor/plugins) and [cursor/community-plugins](https://github.com/cursor/community-plugins): Cursor's specification, official Plugins, and community directory.
+- [github/copilot-plugins](https://github.com/github/copilot-plugins): GitHub's official Copilot Plugin collection, including Skills, MCP servers, hooks, and other extensions.
+- [flutter/agent-plugins](https://github.com/flutter/agent-plugins): Flutter-team capability packages for Claude Code, Codex, and Cursor workflows.
+- [awslabs/agent-plugins](https://github.com/awslabs/agent-plugins): Agent Plugins for AWS architecture, deployment, and operations tasks.
+
+### Open Specifications and Compatibility
+
+- [Agent Plugins](https://agent-plugins.org/): An open, vendor-neutral portable Plugin specification for Skills and MCP servers.
+- [Claude Code Plugins](https://code.claude.com/docs/en/plugins): Plugin creation, installation, and Marketplace documentation for Claude Code.
+- [Cursor Plugins](https://cursor.com/docs/plugins): Cursor's Plugin format, Marketplace, and publishing documentation.
+- [GitHub Copilot Plugins](https://docs.github.com/en/copilot/concepts/agents/about-plugins): Plugin overview for Copilot CLI and Copilot cloud agent.
+- [VS Code Agent Plugins](https://code.visualstudio.com/docs/agent-customization/agent-plugins): Agent Plugin support and cross-tool compatibility in VS Code.
+
+## Component Ecosystem
+
+Components can be used on their own or assembled into Plugins. The following projects are high-quality discovery points and representative implementations. Inclusion, Star counts, and format validation are not security audits or cross-host compatibility certifications.
+
+### Awesome Agent Skills
+
+- [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills): A large catalog and local toolchain for Skill discovery, selection, validation, and planning.
+- [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills): A community Agent Skill directory spanning multiple hosts.
+- [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills): Tutorials, guides, and directories for Agent Skills.
+
+### Awesome MCP
+
+- [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): A broad community directory of MCP servers.
+- [yzfly/Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH): Chinese-language MCP resources and guides to servers and clients.
+- [wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers): An early and actively maintained MCP server directory.
+- [jaw9c/awesome-remote-mcp-servers](https://github.com/jaw9c/awesome-remote-mcp-servers): A directory focused on remotely accessible MCP servers.
+- [punkpeye/awesome-mcp-devtools](https://github.com/punkpeye/awesome-mcp-devtools): Developer tools for building, testing, debugging, and validating MCP implementations.
+
+### Agent Hooks
+
+- [disler/claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery): Examples and tutorials for systematically learning Claude Code Hooks.
+- [karanb192/claude-code-hooks](https://github.com/karanb192/claude-code-hooks): Hooks for safety, cost, observability, and productivity, plus an installable Plugin Marketplace.
+- [sondera-ai/sondera-coding-agent-hooks](https://github.com/sondera-ai/sondera-coding-agent-hooks): Cross-host hook implementations for coding agents including Claude, Cursor, and Gemini.
+- [1Password/agent-hooks](https://github.com/1Password/agent-hooks): Agent Hook implementations maintained by the 1Password team.
+- [ithiria894/awesome-claude-code-hooks](https://github.com/ithiria894/awesome-claude-code-hooks): A Claude Code Hook directory focused on event-driven automation.
+
+## Inclusion Principles
+
+The main Plugin directory accepts capability packages with a clear installation boundary and source. Standalone Skills, MCP servers, hooks, and other components are still welcome, but belong in their corresponding component directories. Every submission should identify supported hosts, included components, installation method, license, maintenance status, last verification date, and primary risk surfaces. See [CONTRIBUTING.md](../CONTRIBUTING.md) for the full requirements.
+
+For now this remains a README-first catalog, not a new package manager or hosted marketplace. Machine-readable catalog data and generation tooling should be introduced only when the number of entries and maintenance needs justify them.
+
+## Agent Skills Quick Start
 
 Skill is a lightweight universal standard that packages workflows and professional knowledge to enhance AI's ability to perform specific tasks.
 
@@ -38,11 +117,11 @@ For recurring tasks, you no longer need to repeat the same background informatio
 
 After nearly a year of evolution, Skill has become a standard way to extend AI with domain-specific capabilities and is now supported by mainstream Agent Harness frameworks and AI products.
 
-## Support Status
+## Agent Skills Support Status
 
 The open Skill specification has been adopted by many hosts, including Claude Code, ChatGPT and Codex, GitHub Copilot, Cursor, Gemini CLI, VS Code, OpenCode, Kiro, and JetBrains Junie. Search paths and support for experimental fields vary by host; consult the [Agent Skills Client Showcase](https://agentskills.io/clients) and each product's documentation for current details.
 
-## Standard Structure
+## Agent Skills Standard Structure
 
 Agent Skills is an [open specification](https://agentskills.io/specification) initiated by Anthropic and maintained with the community. Each Skill is a standardized folder containing workflows, references, scripts, and other resources that an agent loads progressively.
 
@@ -135,7 +214,7 @@ gh skill publish                                 # Validate and publish a Skill
 
 `gh skill` records the repository, ref, and Git tree SHA, and can be combined with immutable releases, secret scanning, and code scanning. See the [GitHub announcement](https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/).
 
-## Quality Tutorials
+## Agent Skills Tutorials
 
 ### Official Documentation
 
@@ -158,7 +237,7 @@ gh skill publish                                 # Validate and publish a Skill
 - @BaiBai on LLMs: [Stop Building Agents, the Future is Skills](https://www.youtube.com/watch?v=xeoWgfkxADI)
 - @01Coder: [OpenCode + GLM + Agent Skills for High-Quality Dev Environment](https://www.youtube.com/watch?v=mGzY2bCoVhU)
 
-## Official Skills
+## Official Agent Skills Projects
 
 <table>
 <tr><th colspan="5">🤖 AI Models & Platforms</th></tr>
