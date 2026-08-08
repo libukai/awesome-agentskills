@@ -1,23 +1,38 @@
 name: Submit an ecosystem resource
-description: Suggest an Agent Plugin, Skill, MCP resource, Hook, Marketplace, specification, or tool.
+description: Suggest a portable Agent Plugin, host-native Plugin, standalone component, Marketplace, specification, or tool.
 title: "[Submission]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for contributing. A standalone Skill, MCP server, or Hook is welcome, but it is not automatically an Agent Plugin. Please provide evidence for installation and compatibility claims.
+        Thanks for contributing. Agent Plugins v1 is the portable baseline for this catalog. Client-native Plugins and standalone components are welcome, but must be labeled separately.
 
   - type: dropdown
     id: entry_type
     attributes:
       label: Entry type
       options:
-        - Agent Plugin
-        - Agent Skill or Skill collection
-        - MCP resource
-        - Agent Hook or Hook collection
-        - Plugin Marketplace or official collection
+        - Portable Agent Plugin (Agent Plugins v1)
+        - Host-native Plugin
+        - Standalone Agent Skill or Skill collection
+        - Standalone MCP resource
+        - Client-specific extension resource
+        - Plugin Marketplace or collection
         - Specification, security, or authoring tool
+    validations:
+      required: true
+
+  - type: dropdown
+    id: portability
+    attributes:
+      label: Format and portability
+      description: Select the strongest claim supported by the canonical source.
+      options:
+        - Agent Plugins v1 portable format
+        - Client-native Plugin format
+        - Standalone component or component collection
+        - Marketplace or collection
+        - Specification or tooling
     validations:
       required: true
 
@@ -25,8 +40,17 @@ body:
     id: canonical_url
     attributes:
       label: Canonical URL
-      description: Link to the original repository, official documentation, or marketplace entry.
+      description: Link to the original repository, official documentation, or Marketplace entry.
       placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+
+  - type: input
+    id: manifest
+    attributes:
+      label: Manifest or format evidence
+      description: Give the exact manifest path and format, or write "standalone component" / "not applicable."
+      placeholder: Root plugin.json using the Agent Plugins v1 schema
     validations:
       required: true
 
@@ -47,33 +71,33 @@ body:
       required: true
 
   - type: input
-    id: hosts
+    id: clients
     attributes:
-      label: Supported hosts
-      description: List only hosts documented or tested by the project.
-      placeholder: Codex, Claude Code, Cursor
+      label: Supported clients
+      description: List only clients documented or tested by the project.
+      placeholder: Agent Plugins v1; Codex; Claude Code; Cursor
     validations:
       required: true
 
   - type: checkboxes
     id: components
     attributes:
-      label: Included components
+      label: Included components and extensions
       options:
-        - label: Skills
-        - label: MCP servers or MCP Apps
-        - label: Apps or connectors
-        - label: Agents
-        - label: Commands
-        - label: Hooks
-        - label: LSP servers or monitors
-        - label: UI, assets, templates, or other extensions
+        - label: "Standard core: Skills"
+        - label: "Standard core: MCP servers"
+        - label: "Client-specific: MCP Apps, other apps, or connectors"
+        - label: "Client-specific: Agents"
+        - label: "Client-specific: Commands"
+        - label: "Client-specific: Hooks"
+        - label: "Client-specific: LSP servers, monitors, or rules"
+        - label: "Client-specific: UI, assets, templates, or other extensions"
 
   - type: textarea
     id: install
     attributes:
       label: Installation or usage path
-      description: Provide an exact command, marketplace route, upload flow, or documentation link.
+      description: Provide an exact command, Marketplace route, upload flow, or documentation link.
     validations:
       required: true
 
@@ -123,7 +147,9 @@ body:
       options:
         - label: I used the canonical source and did not submit an unexplained mirror.
           required: true
-        - label: I did not infer cross-host compatibility from the presence of a SKILL.md file alone.
+        - label: I only used the portable Agent Plugins v1 label when the root manifest declares the canonical schema.
+          required: true
+        - label: I separated client-specific capabilities from the portable core.
           required: true
         - label: I understand that inclusion does not imply security certification.
           required: true
