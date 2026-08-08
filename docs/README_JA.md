@@ -1,7 +1,7 @@
 <div>
   <p align="center">
     <a href="https://platform.composio.dev/?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills">
-    <img width="100%" alt="Composio banner" src="../assets/media/awesome-agent-skills.png">
+    <img width="100%" alt="Awesome Agent Plugins banner supported by Composio" src="../assets/media/awesome-agent-plugins.png">
     </a>
   </p>
 </div>
