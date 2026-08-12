@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [stipend](https://github.com/stipend-sh/stipend)：让 Agent 自行安装的 Base 链非托管 USDC 钱包，单笔/每日/单一收款方限额与收款地址白名单在签名前由代码强制执行，而非写在提示词里
 
 
 ## 安全审查
