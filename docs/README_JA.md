@@ -233,7 +233,7 @@ gh skill publish                                 # Skill を検証して公開
 <td><a href="https://github.com/wpsnote/wpsnote-skills">wps</a></td>
 <td><a href="https://github.com/marswaveai/skills">listenhub</a></td>
 <td><a href="https://github.com/larksuite/cli">lark</a></td>
-<td></td>
+<td><a href="https://github.com/sandbaseai/sandbase-skills">sandbase</a></td>
 </tr>
 </table>
 
