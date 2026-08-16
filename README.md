@@ -246,6 +246,7 @@ gh skill publish                                 # 校验并发布技能
 ### 编程开发
 
 -   [superpowers](https://github.com/obra/superpowers)：涵盖完整编程项目工作流程
+-   [agent-qa skills](https://github.com/vostride/agent-qa/tree/main/.agents/skills)：用于编写、运行和审查自然语言 Web / 移动端测试的三项 Agent Skills，并可配合 Agent QA CLI 与 MCP
 -   [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)：前端设计技能
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：更精致和个性化的 UI/UX 设计
 -   [archify](https://github.com/tt-a1i/archify)：生成可验证、可导出的架构图与流程图
