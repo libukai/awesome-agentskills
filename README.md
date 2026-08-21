@@ -271,6 +271,7 @@ gh skill publish                                 # 校验并发布技能
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：创建 n8n 工作流
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage)：跨多种 Agent 管理本地 Skills
+-   [apitube-news-api](https://github.com/apitube/news-api-skills/tree/main/skills/apitube-news-api)：调用 APITube News API 检索全球新闻，支持关键词、实体、情感与地域筛选
 
 ### 其他类型
 
