@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [dark-psychology-skills](https://github.com/YannisKiefer/dark-psychology-skills)：从36本书逐页蒸馏的13个销售谈判Agent技能（CIA心理战手册、FBI行为研究、宣传学、说服经典），所有技巧通过诚实影响力过滤：完全公开后依然有效
 
 
 ## 安全审查
