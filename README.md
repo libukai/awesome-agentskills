@@ -271,6 +271,7 @@ gh skill publish                                 # 校验并发布技能
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：创建 n8n 工作流
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage)：跨多种 Agent 管理本地 Skills
+-   [SandBase CLI](https://github.com/sandbaseai/cli/tree/main/skills/sandbase)：官方 SandBase Skill 与 MCP 桥接，连接受支持的 AI 客户端和 2,000+ AI 模型及 API
 
 ### 其他类型
 
