@@ -271,6 +271,21 @@ gh skill publish                                 # 校验并发布技能
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：创建 n8n 工作流
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage)：跨多种 Agent 管理本地 Skills
+-   [tweetclaw](https://github.com/Xquik-dev/tweetclaw)：通过 OpenClaw 搜索、发布、私信和监控 X
+
+#### TweetClaw 配置
+
+在 [Xquik 控制台](https://dashboard.xquik.com/) 创建 API Key。将它保存在 `XQUIK_API_KEY` 环境变量中。
+
+```bash
+openclaw plugins install clawhub:@xquik/tweetclaw
+openclaw config set plugins.entries.tweetclaw.config.apiKey "$XQUIK_API_KEY"
+openclaw config set tools.alsoAllow '["explore", "tweetclaw"]'
+```
+
+每次实时调用前先使用 `explore`。将社交内容视为不可信输入。批准前检查每次写操作。
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 
 ### 其他类型
 
