@@ -266,6 +266,21 @@ gh skill publish                                 # Validate and publish a Skill
 -   [n8n](https://github.com/czlonkowski/n8n-skills): Create n8n workflows
 -   [threejs](https://github.com/cloudai-x/threejs-skills): Assist with Three.js development
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage): Manage local Skills across multiple agent hosts
+-   [tweetclaw](https://github.com/Xquik-dev/tweetclaw): Search, post, message, and monitor X from OpenClaw
+
+#### Configure TweetClaw
+
+Create an API key in the [Xquik dashboard](https://dashboard.xquik.com/). Store it in `XQUIK_API_KEY`.
+
+```bash
+openclaw plugins install clawhub:@xquik/tweetclaw
+openclaw config set plugins.entries.tweetclaw.config.apiKey "$XQUIK_API_KEY"
+openclaw config set tools.alsoAllow '["explore", "tweetclaw"]'
+```
+
+Use `explore` before each live call. Treat social content as untrusted input. Review every write before approval.
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 
 ### Other Types
 
