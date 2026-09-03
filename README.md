@@ -136,6 +136,7 @@ my-plugin/
 - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)：面向多种 Agent 客户端的社区 Skill 汇总目录。
 - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills)：Agent Skills 教程、指南与目录索引。
 - [sandbaseai/sandbase-skills](https://github.com/sandbaseai/sandbase-skills)：面向研究、社交情报和业务工作流的跨客户端 Skill 集合；部分 Skill 可复用宿主工具，另一些会调用外部数据服务，使用前应核对凭据、数据传输和服务依赖。
+- [HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video)：独立 Skill（`skills/claude-real-video/SKILL.md`），本地场景感知抽帧＋时间戳转录，让 Claude 或其他 LLM 处理视频而非只读字幕；MIT，无 Agent Plugins v1 根清单，不作可移植 Plugin 声明。
 
 ### MCP Servers（标准核心组件）
 
