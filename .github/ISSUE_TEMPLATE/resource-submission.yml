@@ -1,0 +1,155 @@
+name: Submit an ecosystem resource
+description: Suggest a portable Agent Plugin, host-native Plugin, standalone component, Marketplace, specification, or tool.
+title: "[Submission]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. Agent Plugins v1 is the portable baseline for this catalog. Client-native Plugins and standalone components are welcome, but must be labeled separately.
+
+  - type: dropdown
+    id: entry_type
+    attributes:
+      label: Entry type
+      options:
+        - Portable Agent Plugin (Agent Plugins v1)
+        - Host-native Plugin
+        - Standalone Agent Skill or Skill collection
+        - Standalone MCP resource
+        - Client-specific extension resource
+        - Plugin Marketplace or collection
+        - Specification, security, or authoring tool
+    validations:
+      required: true
+
+  - type: dropdown
+    id: portability
+    attributes:
+      label: Format and portability
+      description: Select the strongest claim supported by the canonical source.
+      options:
+        - Agent Plugins v1 portable format
+        - Client-native Plugin format
+        - Standalone component or component collection
+        - Marketplace or collection
+        - Specification or tooling
+    validations:
+      required: true
+
+  - type: input
+    id: canonical_url
+    attributes:
+      label: Canonical URL
+      description: Link to the original repository, official documentation, or Marketplace entry.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+
+  - type: input
+    id: manifest
+    attributes:
+      label: Manifest or format evidence
+      description: Give the exact manifest path and format, or write "standalone component" / "not applicable."
+      placeholder: Root plugin.json using the Agent Plugins v1 schema
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User outcome
+      description: In one or two sentences, what can a user accomplish with this resource?
+    validations:
+      required: true
+
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher and status
+      description: Name the publisher and state whether this is official, vendor-maintained, community-maintained, or archived.
+    validations:
+      required: true
+
+  - type: input
+    id: clients
+    attributes:
+      label: Supported clients
+      description: List only clients documented or tested by the project.
+      placeholder: Agent Plugins v1; Codex; Claude Code; Cursor
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: components
+    attributes:
+      label: Included components and extensions
+      options:
+        - label: "Standard core: Skills"
+        - label: "Standard core: MCP servers"
+        - label: "Client-specific: MCP Apps, other apps, or connectors"
+        - label: "Client-specific: Agents"
+        - label: "Client-specific: Commands"
+        - label: "Client-specific: Hooks"
+        - label: "Client-specific: LSP servers, monitors, or rules"
+        - label: "Client-specific: UI, assets, templates, or other extensions"
+
+  - type: textarea
+    id: install
+    attributes:
+      label: Installation or usage path
+      description: Provide an exact command, Marketplace route, upload flow, or documentation link.
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: Source availability and license
+      placeholder: Open source, Apache-2.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance and verification evidence
+      description: Include the latest meaningful release or commit date and what you personally checked, using YYYY-MM-DD.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: risks
+    attributes:
+      label: Known risk surfaces
+      description: Select every known risk surface, or select the final option if none is known after review.
+      options:
+        - label: Executes local code or scripts
+        - label: Installs or runs hooks
+        - label: Uses local or remote MCP servers
+        - label: Requires credentials or external accounts
+        - label: Reads external or private data
+        - label: Can write to external systems
+        - label: Includes closed-source dependencies
+        - label: No known executable or external-access surface
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Disclose limitations, incompatibilities, deprecations, or conflicts of interest.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I used the canonical source and did not submit an unexplained mirror.
+          required: true
+        - label: I only used the portable Agent Plugins v1 label when the root manifest declares the canonical schema.
+          required: true
+        - label: I separated client-specific capabilities from the portable core.
+          required: true
+        - label: I understand that inclusion does not imply security certification.
+          required: true
