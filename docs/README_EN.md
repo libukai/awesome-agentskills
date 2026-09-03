@@ -121,6 +121,11 @@ The current public compatibility matrix lists VS Code, Cursor, GitHub Copilot, C
 - [flutter/agent-plugins](https://github.com/flutter/agent-plugins): Flutter-team capability packages for Claude Code, Codex, and Cursor workflows.
 - [awslabs/agent-plugins](https://github.com/awslabs/agent-plugins): Agent Plugins for AWS architecture, deployment, and operations tasks.
 
+### Specification, Governance, and Security Tooling
+
+- [Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard): An AI red-teaming and infrastructure-security platform maintained by Tencent Zhuque Lab. Its `aig-agent-redteam` Skill can perform authorized dynamic tests involving network probes, command execution, and target interaction, so it should be used only with explicit authorization and isolated boundaries.
+- [AMAP-ML/SkillClaw](https://github.com/AMAP-ML/SkillClaw): Infrastructure for Skill evolution, deduplication, and cross-device sharing. It can proxy model requests, record sessions, and rewrite Skills automatically; review privacy, credential, and write boundaries before enabling shared storage or automatic evolution.
+
 ## Component Ecosystem
 
 Components can be used independently or assembled into a standard Plugin. The list below keeps only high-quality discovery points. Inclusion, Stars, and format validation are not security audits or cross-client compatibility certifications.
@@ -130,6 +135,7 @@ Components can be used independently or assembled into a standard Plugin. The li
 - [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills): A catalog and local toolchain for large-scale Skill discovery, selection, validation, and planning.
 - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills): A community Skill directory spanning multiple Agent clients.
 - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills): Agent Skills tutorials, guides, and directory indexes.
+- [sandbaseai/sandbase-skills](https://github.com/sandbaseai/sandbase-skills): A cross-client Skill collection for research, social intelligence, and business workflows. Some Skills reuse host tools while others call external data services; review credentials, data transmission, and service dependencies before use.
 
 ### MCP Servers (Standard Core Component)
 

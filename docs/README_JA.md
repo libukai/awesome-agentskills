@@ -121,6 +121,11 @@ my-plugin/
 - [flutter/agent-plugins](https://github.com/flutter/agent-plugins)：Flutter チームが管理する Claude Code、Codex、Cursor 向け能力パッケージです。
 - [awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)：AWS の設計、デプロイ、運用タスク向け Agent Plugins です。
 
+### 仕様・ガバナンス・セキュリティツール
+
+- [Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)：Tencent Zhuque Lab が管理する AI レッドチームおよびインフラセキュリティ基盤です。`aig-agent-redteam` Skill はネットワーク探査、コマンド実行、対象との対話を伴う認可済み動的テストを実行できるため、明示的な許可と隔離された境界の中でのみ使用してください。
+- [AMAP-ML/SkillClaw](https://github.com/AMAP-ML/SkillClaw)：Skill の進化、重複排除、端末間共有のための基盤です。モデル要求のプロキシ、セッション記録、Skill の自動書き換えを行えるため、共有ストレージや自動進化を有効にする前に、プライバシー、認証情報、書き込み境界を確認してください。
+
 ## Component エコシステム
 
 Component は単独でも利用でき、標準 Plugin に組み込むこともできます。以下は高品質な発見入口だけを残しています。掲載、Star 数、形式検証は、セキュリティ監査やクライアント間互換性の認証を意味しません。
@@ -130,6 +135,7 @@ Component は単独でも利用でき、標準 Plugin に組み込むことも�
 - [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)：大規模な Skill の発見、選択、検証、計画を支援するカタログとローカルツールチェーンです。
 - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)：複数の Agent クライアントを対象とするコミュニティ Skill ディレクトリです。
 - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills)：Agent Skills のチュートリアル、ガイド、ディレクトリです。
+- [sandbaseai/sandbase-skills](https://github.com/sandbaseai/sandbase-skills)：調査、ソーシャルインテリジェンス、業務ワークフロー向けのクライアント横断 Skill コレクションです。宿主ツールを再利用する Skill もあれば外部データサービスを呼び出すものもあるため、利用前に認証情報、データ送信、サービス依存関係を確認してください。
 
 ### MCP Servers（標準コア Component）
 

@@ -121,6 +121,11 @@ my-plugin/
 - [flutter/agent-plugins](https://github.com/flutter/agent-plugins)：Flutter 团队维护的跨 Claude Code、Codex 与 Cursor 的开发能力包。
 - [awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)：面向 AWS 架构、部署和运维任务的 Agent Plugins。
 
+### 规范、治理与安全工具
+
+- [Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)：腾讯朱雀实验室维护的 AI 红队与基础设施安全平台；其中的 `aig-agent-redteam` Skill 可执行授权动态测试，涉及网络探测、命令执行和目标交互，应只在明确授权及隔离边界内使用。
+- [AMAP-ML/SkillClaw](https://github.com/AMAP-ML/SkillClaw)：面向 Skill 演化、去重与跨端共享的基础设施；它可以代理模型请求、记录会话并自动改写 Skill，启用共享存储或自动演化前应审查隐私、凭据和写入边界。
+
 ## 组件生态
 
 组件可以单独使用，也可以进一步组合进标准 Plugin。下面只保留高质量发现入口；收录、Star 数和格式校验都不代表安全审计或跨客户端兼容认证。
@@ -130,6 +135,7 @@ my-plugin/
 - [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)：覆盖大规模 Skill 发现、选择、校验与规划的目录和本地工具链。
 - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)：面向多种 Agent 客户端的社区 Skill 汇总目录。
 - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills)：Agent Skills 教程、指南与目录索引。
+- [sandbaseai/sandbase-skills](https://github.com/sandbaseai/sandbase-skills)：面向研究、社交情报和业务工作流的跨客户端 Skill 集合；部分 Skill 可复用宿主工具，另一些会调用外部数据服务，使用前应核对凭据、数据传输和服务依赖。
 
 ### MCP Servers（标准核心组件）
 
