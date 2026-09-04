@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [salespeak-ai/buyer-eval-skill](https://github.com/salespeak-ai/buyer-eval-skill)：结构化 B2B 软件供应商评估，7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策
 
 
 ## 安全审查
