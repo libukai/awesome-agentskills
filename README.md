@@ -251,6 +251,7 @@ gh skill publish                                 # 校验并发布技能
 -   [archify](https://github.com/tt-a1i/archify)：生成可验证、可导出的架构图与流程图
 -   [text-to-cad](https://github.com/earthtojake/text-to-cad)：面向 CAD、CAE 与 CAM 的工程技能库
 -   [native-feel-skill](https://github.com/yetone/native-feel-skill)：跨平台桌面应用的原生体验设计指南
+-   [sol-hierarchical-orchestrator](https://github.com/Ghost011118/sol-hierarchical-orchestrator)：SOL/TERRA/LUNA 分层多代理工程编排与验收治理
 
 
 ### 内容创作
