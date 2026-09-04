@@ -272,6 +272,7 @@ gh skill publish                                 # Validate and publish a Skill
 -  [pua](https://github.com/tanweai/pua): Drive AI to work harder in a PUA style
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide startup advice from a YC perspective
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
+-   [ii-commons](https://github.com/Intelligent-Internet/II-Commons-Skills): Agent skill and npm CLI for daily-updated retrieval across arXiv, PubMed/PMC, and supported US policy corpora
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
 
 ## Security Audit
