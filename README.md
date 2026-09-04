@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [falsify](https://github.com/263311487-ux/falsify)：给 AI 智能体安装科学思维协议——先证伪，再相信；先标不确定，再下结论（支持 Codex / Claude Code / DeepSeek Harness / Cursor 等 20+ 智能体，含 28 个评测用例）
 
 
 ## 安全审查
