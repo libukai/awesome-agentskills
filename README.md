@@ -286,7 +286,7 @@ Skill 不只是文档：它的描述会影响检索和选择，正文会改变 A
 
 安装前建议优先选择官方或可信维护者，先执行 `gh skill preview` 或人工检查全部文件，并固定 tag/commit；运行时使用最小权限、沙箱、敏感操作人工确认和审计日志；更新时检查 diff 并保留回滚版本。注意：商店收录、Star 数和格式校验都不等于安全或有效。
 
-对于安全性要求较高的场景，可使用 [Cisco AI Defense Skill Scanner](https://github.com/cisco-ai-defense/skill-scanner) 或 @余弦的 [slowmist-agent-security skill](https://github.com/slowmist/slowmist-agent-security) 做初步扫描；同时参考 [NVIDIA Verified Skills](https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/) 的 Skill Card、扫描、签名和来源治理思路。扫描器只能提供信号，不能替代人工审查和隔离运行。
+对于安全性要求较高的场景，可使用 [Cisco AI Defense Skill Scanner](https://github.com/cisco-ai-defense/skill-scanner)、@余弦的 [slowmist-agent-security skill](https://github.com/slowmist/slowmist-agent-security)，或腾讯朱雀实验室的 [aig-agent-redteam](https://github.com/Tencent/AI-Infra-Guard/tree/main/skills/aig-agent-redteam)（一键让 Agent 对自身做红队安全演习，覆盖提示词注入、工具滥用、数据泄露、权限提升等风险）做初步扫描；同时参考 [NVIDIA Verified Skills](https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/) 的 Skill Card、扫描、签名和来源治理思路。扫描器只能提供信号，不能替代人工审查和隔离运行。
 
 ## 创建技能
 
