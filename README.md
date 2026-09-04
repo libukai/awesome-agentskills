@@ -129,6 +129,8 @@ npx skills init [skill-name]                     # 创建技能模板
 
 如果更重视版本固定和供应链可追溯性，可使用 GitHub CLI 2.90.0 及以上版本提供的 `gh skill`（目前为 public preview）：
 
+如果你更需要按分类和使用场景浏览公开的 OpenClaw 社区技能，也可以参考 [Remote OpenClaw](https://www.remoteopenclaw.com/skills/openclaw) 提供的 OpenClaw 技能目录。
+
 ```bash
 gh skill search <query>                          # 搜索技能
 gh skill preview <owner/repo> <skill>            # 安装前检查内容

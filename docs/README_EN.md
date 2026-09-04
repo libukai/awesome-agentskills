@@ -124,6 +124,8 @@ The current `skills` CLI supports more than 70 Agents and lets you choose projec
 
 If version pinning and supply-chain provenance matter more, GitHub CLI 2.90.0 and later provide the public-preview `gh skill` commands:
 
+If you want a directory-first view of public OpenClaw community skills with category and use-case filtering, you can also browse [Remote OpenClaw](https://www.remoteopenclaw.com/skills/openclaw).
+
 ```bash
 gh skill search <query>                          # Search for Skills
 gh skill preview <owner/repo> <skill>            # Inspect content before installation
