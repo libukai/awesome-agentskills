@@ -1,6 +1,8 @@
 <div>
   <p align="center">
-    <img width="100%" alt="Awesome Agent Plugins banner" src="../assets/media/awesome-agent-plugins.png">
+    <a href="https://platform.composio.dev/?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills">
+    <img width="100%" alt="Composio banner" src="../assets/media/awesome-agent-skills.png">
+    </a>
   </p>
 </div>
 
@@ -24,145 +26,304 @@
 
 </div>
 
-# Awesome Agent Plugins
+このプロジェクトは少数精鋭の原則に従い、優れた Skill リソース、チュートリアル、実践例を収集・共有することで、より多くの人がパーソナライズされた Agent 構築の第一歩を踏み出せるよう支援します。
 
-> **Formerly Awesome Agent Skills.** 本プロジェクトは Agent Plugin エコシステムへ軸足を移しました。旧名称はコミュニティとプロジェクト履歴の継続性のためにのみ残します。
+> 𝕏 アカウント [@libukai](https://x.com/libukai) および 💬 WeChat 公式アカウント [@李不凯正在研究](https://mp.weixin.qq.com/s/uer7HvD2Z9ZbJSPEZWHKRA?scene=0&subscene=90) をフォローして、Skills の最新リソースと実用的なチュートリアルをいち早く入手してください!
 
-本プロジェクトは [Agent Plugins Specification](https://agent-plugins.org/specification) を中心的な基準とし、可搬な Agent Plugins を収録します。各クライアント固有の形式と機能は、独立した章で説明します。あらゆるものを Plugin と呼ぶのではなく、能力パッケージの可搬性に明確で検証可能な境界を与えることが目的です。
+## クイックスタート
 
-> 𝕏 アカウント [@libukai](https://x.com/libukai) および 💬 WeChat 公式アカウント [@李不凯正在研究](https://mp.weixin.qq.com/s/uer7HvD2Z9ZbJSPEZWHKRA?scene=0&subscene=90) をフォローして、Agent Plugin エコシステムの最新リソースと実践チュートリアルを入手してください!
+Skill は軽量な汎用標準で、ワークフローと専門知識をパッケージ化することで、AI が特定のタスクを実行する能力を強化します。
 
-## Agent Plugins 標準
+繰り返し発生するタスクでは、会話のたびに同じ背景情報を入力する必要はありません。対応する Skill をインストールすれば、Agent はその領域に必要な能力を利用できます。
 
-[Agent Plugins v1.0.0](https://agent-plugins.org/specification) は、可搬な Agent Plugin パッケージのためのベンダー中立仕様です。現在のステータスは **Working Draft** です。これは複数のクライアントが実装できる最小の相互運用契約であり、単一クライアントの機能上限ではありません。
+約1年にわたる進化を経て、Skill は AI に領域固有の能力を追加する標準的な手段となり、主要な Agent Harness フレームワークや AI 製品で広くサポートされています。
 
-v1 が標準化する Component は **Skills** と **MCP Servers** の2種類だけです。Agents、Commands、Hooks、Apps、LSP Servers、Rules、UI なども重要ですが、ライフサイクル、権限、実行時の意味がクライアントごとに異なるため、v1 の可搬コアには含まれません。
+## サポート状況
 
-### 可搬な最小セット
+Skill のオープン仕様は、Claude Code、ChatGPT と Codex、GitHub Copilot、Cursor、Gemini CLI、VS Code、OpenCode、Kiro、JetBrains Junie など、多数のホストに採用されています。検索パスや実験的フィールドの対応状況はホストごとに異なるため、最新情報は [Agent Skills Client Showcase](https://agentskills.io/clients) と各製品のドキュメントを確認してください。
 
-| レイヤー | 固定位置 | 要件 | 可搬性 |
-| --- | --- | --- | --- |
-| **コア Manifest** | ルートの `plugin.json` | 必須。少なくとも仕様の `$schema` と `name` を含む | Agent Plugins v1 |
-| **Skills** | `skills/<name>/SKILL.md` | 任意。Agent Skills 仕様に従う | 標準コア Component |
-| **MCP Servers** | ルートの `mcp.json` | 任意。Agent Plugins の MCP 設定形式に従う | 標準コア Component |
-| **クライアント拡張** | `plugin.json` の `extensions["com.example.client"]` および／またはトップレベルの `com.example.client/` | 任意。意味は対応クライアントが定義する | その名前空間を実装するクライアントでのみ有効 |
+## 標準構造
+
+Agent Skills は Anthropic が開始し、コミュニティと共同で管理する[オープン仕様](https://agentskills.io/specification)です。各 Skill はワークフロー、資料、スクリプトなどを含む標準化フォルダで、Agent が段階的にロードします。
+
+```markdown
+my-skill/
+├── SKILL.md          # 必須：メタデータ + 使用手順
+├── scripts/          # オプション：実行可能コード
+├── references/       # オプション：参考資料とドキュメント
+├── assets/           # オプション：テンプレート、リソース
+└── ...               # その他のファイルやディレクトリ
+```
+
+最小構成の Skill に必要なファイルは `SKILL.md` だけです。
+
+`SKILL.md` の YAML frontmatter には `name` と `description` が必須です。`license`、`compatibility`、`metadata`、実験的な `allowed-tools` も宣言できます。
+
+`name` は64文字以内の小文字、数字、ハイフンで構成し、親ディレクトリ名と一致させます。`description` は1024文字以内で、Skill が「何をするか」と「いつ使うか」の両方を記述します。本文は500行、5000 tokens 未満を目安とし、詳細は用途ごとに分けたリソースファイルへ移します。
+
+`SKILL.md` に加えて、必要に応じて次のファイルやディレクトリを含められます：
+
+- `scripts/`：データ処理、形式変換、結果検証など、反復的、複雑、または決定的な結果を必要とする処理を実行可能コードとして保存します。
+- `references/`：領域知識、技術文書、例、データ形式の説明など、特定のタスクでのみ Agent が読む補足資料を保存します。
+- `assets/`：文書テンプレート、設定テンプレート、画像、参照表、Schema など、実行時または成果物で使用する静的リソースを保存します。
+- その他のファイル：ライセンス、利用者向けドキュメント、タスクの完了に必要なその他のファイルやディレクトリも追加できます。
+
+これらはすべてオプションです。`SKILL.md` から Skill ルートへの相対パスで参照し、Agent がいつ読み取り、または実行するかを明記します。
+
+Agent は通常、3段階で Skill をロードします。起動時には発見のために各 Skill の `name` と `description` だけを読み、タスクが一致すると完全な `SKILL.md` を有効化してロードし、実行中は必要な `scripts/`、`references/`、`assets/` だけを読み込みます。この段階的開示により、コンテキストを過度に消費せず、多数の Skill を利用できます。
+
+## スキルのインストール
+
+Skill は Claude や ChatGPT などの GUI App のほか、Cursor などの IDE や Claude Code などの TUI CLI でも使用できます。
+
+Skill のインストールとは、Agent が必要に応じてロードして使用できるよう、対応するフォルダを所定のディレクトリに配置することです。
+
+### 共通ディレクトリ規約
+
+多くの互換クライアントは、プロジェクトとユーザーの両スコープで `.agents/skills/` を検索します：
 
 ```text
-my-plugin/
-├── plugin.json
-├── skills/
-│   └── summarize/
-│       └── SKILL.md
-├── mcp.json
-└── com.example.client/
-    └── hooks/
+<project>/.agents/skills/<skill-name>/
+~/.agents/skills/<skill-name>/
 ```
 
-最小の `plugin.json`：
+同名の Skill は通常、プロジェクトレベルがユーザーレベルより優先されます。クライアント固有のディレクトリも検索される場合があるため、正確なパスは各製品のドキュメントを確認してください。プロジェクト Skill はリポジトリと一緒に取得されるため、未知のリポジトリから Skill をロードする前に出所と内容を確認します。
 
-```json
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "minimal-plugin"
-}
+### App でインストール
+
+![](../assets/media/workbuddy.png)
+
+現在、App で Skill を使用する主な方法は2つあります：App 内蔵の Skill ストアからインストールするか、zip ファイルをアップロードしてインストールする方法です。
+
+一部の App には Skill ストアや管理画面が組み込まれており、インストールと管理を手軽に行えます。
+
+公式ストアにない Skill については、以下で推奨するサードパーティ Skill ストアからダウンロードして手動でインストールできます。
+
+### CLI でインストール
+
+![](../assets/media/skills_mp.png)
+
+[skillsmp](https://skillsmp.com/zh) マーケットプレイスを使うと、GitHub 上の Skill プロジェクトを発見し、カテゴリ、更新時間、スター数などで絞り込めます。
+
+また、Vercel の [skills.sh](https://skills.sh/) ランキングボードを補助的に使用できます。最も人気のある Skills リポジトリと個別 Skill の使用状況を直感的に確認できます。
+
+特定の Skill については、`npx skills` コマンドラインツールを使用して迅速に発見、追加、管理できます。詳細なパラメータについては [vercel-labs/skills](https://github.com/vercel-labs/skills) を参照してください。
+
+```bash
+npx skills find [query]                          # 関連スキルを検索
+npx skills add <owner/repo>                      # スキルをインストール（GitHub 省略形、完全 URL、ローカルパス対応）
+npx skills add <owner/repo> --list               # リポジトリ内のスキルだけを確認
+npx skills use <owner/repo@skill>                # 永続インストールせず一時利用
+npx skills list                                  # インストール済みスキルをリスト表示
+npx skills update [skill-name]                   # 1つ以上のスキルを更新
+npx skills remove [skill-name]                   # スキルをアンインストール
+npx skills init [skill-name]                     # スキルテンプレートを作成
 ```
 
-`skills/` または `mcp.json` が存在しなくても形式エラーにはなりません。また、クライアントは Component と MCP transport を段階的に実装できます。したがって、**パッケージの仕様適合**、**クライアントの対応**、**Component の実行成功**は、それぞれ独立して確認すべき主張です。
+現在の `skills` CLI は70種類以上の Agent をサポートし、project/global スコープ、対象 Agent、コピーまたはシンボリックリンクによるインストールを指定できます。最新のパラメータは [vercel-labs/skills](https://github.com/vercel-labs/skills) を参照してください。
 
-### 標準が意図的に小さい理由
+バージョン固定とサプライチェーンの追跡可能性を重視する場合は、GitHub CLI 2.90.0 以降で提供される public preview の `gh skill` を利用できます：
 
-- Skills は可搬なタスク手順、知識、補助リソースを提供します。
-- MCP はツールとデータ接続のための可搬なプロトコルを提供します。
-- その他の機能には、まだ安定したクライアント間共通セマンティクスがありません。名前空間付き拡張により、誤った互換性を主張せずに革新できます。
-- 小さなコアにより、作者は1つのパッケージでより多くのクライアントを対象にでき、各クライアントはその上に豊かなネイティブ体験を提供できます。
+```bash
+gh skill search <query>                          # Skill を検索
+gh skill preview <owner/repo> <skill>            # インストール前に内容を確認
+gh skill install <owner/repo> <skill>@<tag>      # tag を指定してインストール
+gh skill install <owner/repo> <skill> --pin <sha> # commit に固定
+gh skill update --all                            # 更新を確認して適用
+gh skill publish                                 # Skill を検証して公開
+```
 
-### 本カタログの用語
+`gh skill` はリポジトリ、ref、Git tree SHA を記録し、変更不可の Release、secret scanning、code scanning と組み合わせて利用できます。詳細は [GitHub の発表](https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/) を参照してください。
 
-| 種類 | 本プロジェクトでの境界 | 掲載場所 |
-| --- | --- | --- |
-| **Portable Agent Plugin** | ルート `plugin.json` が Agent Plugins v1 を宣言する | 標準ベースのメインカタログ |
-| **Client extension** | 適合パッケージ内で逆ドメイン名前空間を使うクライアント固有データまたはファイル | 対応クライアントの章。非可搬部分を明記 |
-| **Host-native Plugin** | `.codex-plugin`、`.claude-plugin`、`.cursor-plugin`、または Copilot 固有形式を使用する | クライアント固有の章。既定では可搬とみなさない |
-| **Standalone component** | 適合 Plugin パッケージ境界を持たない単独の Skill、MCP Server、Hook など | Component エコシステム |
-| **Marketplace / Collection** | Plugin の発見、インストール、集約に使うインデックス | エコシステムディレクトリ。単独 Plugin ではない |
+## 優質チュートリアル
 
-## クライアント固有機能
+### 公式ドキュメント
 
-以下の形式と機能は、各クライアントのネイティブな製品面に属します。Agent Plugins コアと共存できますが、標準でも表現されていない限り、v1 の可搬 Component ではありません。
+- @Agent Skills：[概要](https://agentskills.io/home)、[仕様](https://agentskills.io/specification)、[クイックスタート](https://agentskills.io/skill-creation/quickstart)
+- @Agent Skills：[作成ベストプラクティス](https://agentskills.io/skill-creation/best-practices)、[品質評価](https://agentskills.io/skill-creation/evaluating-skills)、[description 最適化](https://agentskills.io/skill-creation/optimizing-descriptions)、[スクリプト設計](https://agentskills.io/skill-creation/using-scripts)
+- @Agent Skills：[Agent に Skills サポートを追加する](https://agentskills.io/client-implementation/adding-skills-support)
+- @Anthropic：[Claude Skills 完全構築ガイド](Claude-Skills-完全構建指南.md)
+- @Anthropic：[Claude Agent Skills 実践経験](Claude-Code-Skills-実战経験.md)
+- @Google：[Agent Skills 5つのデザインパターン](Agent-Skill-五种设计模式.md)
 
-| クライアント | ネイティブ形式のマーカー | クライアント固有機能の例 |
-| --- | --- | --- |
-| **ChatGPT / Codex** | `.codex-plugin/plugin.json` | Apps、Agents、Commands、Hooks、Assets、Codex 固有の `.app.json` / `.mcp.json` |
-| **Claude Code** | `.claude-plugin/plugin.json` | Agents、Commands、Hooks、LSP Servers、Monitors、Themes、Claude 固有の `.mcp.json` |
-| **Cursor** | `.cursor-plugin/plugin.json` | Rules、Cursor 固有の Skills/MCP 構成、Canvas、その他の Cursor 機能 |
-| **GitHub Copilot** | ルート `plugin.json`。Agent Plugins の `$schema` がなければ Copilot 形式として解釈 | Custom Agents、Hooks、Copilot 固有の `.mcp.json`、LSP Servers |
-| **VS Code** | Agent Plugins 1.0、Copilot、Claude、Legacy OpenPlugin 形式を自動判定 | VS Code の Agents、Hooks、Slash Commands。Skills と `mcp.json` は標準形式を利用可能 |
+### 図文チュートリアル
 
-現在の公開互換表には VS Code、Cursor、GitHub Copilot、ChatGPT / Codex、Kiro が掲載されています。各クライアントは Skills、MCP transport、その他の機能を段階的に実装できます。詳細は [Compatible Clients](https://agent-plugins.org/compatible-clients) を参照してください。
+- @libukai：[Agent Skills 簡易紹介スライド](../assets/docs/Agent%20Skills%20终极指南.pdf)
+- @Eze：[Agent Skills 究極ガイド：入門、習熟、予測](https://mp.weixin.qq.com/s/jUylk813LYbKw0sLiIttTQ)
+- @deeptoai：[Claude Agent Skills ファーストプリンシプル深掘り解析](https://skills.deeptoai.com/zh/docs/ai-ml/claude-agent-skills-first-principles-deep-dive)
 
-## エコシステムディレクトリ
+### 動画チュートリアル
 
-### 標準と互換実装
+- @Mark's Tech Workshop：[Agent Skill：使い方から原理まで一度に解説](https://www.youtube.com/watch?v=yDc0_8emz7M)
+- @白白说大模型：[Agent を作るのはもうやめよう、未来は Skills の時代](https://www.youtube.com/watch?v=xeoWgfkxADI)
+- @01Coder：[OpenCode + 智谱GLM + Agent Skills で高品質な開発環境を構築](https://www.youtube.com/watch?v=mGzY2bCoVhU)
 
-- [Agent Plugins Specification](https://agent-plugins.org/specification)：パッケージ形式、Manifest Schema、Component 探索、拡張機構の規範文書です。
-- [agentplugins/agent-plugins-spec](https://github.com/agentplugins/agent-plugins-spec)：仕様、Schema、ガバナンス、参考資料の公開リポジトリです。
-- [Compatible Clients](https://agent-plugins.org/compatible-clients)：クライアントごとの標準 Component と MCP transport 対応表です。
-- [VS Code Agent Plugins](https://code.visualstudio.com/docs/agent-customization/agent-plugins)：標準形式、ホスト拡張、複数のネイティブ形式の自動判定を区別する実装例です。
+## 公式スキル
 
-### クライアント固有コレクションと Marketplace
+<table>
+<tr><th colspan="5">🤖 AI モデルとプラットフォーム</th></tr>
+<tr>
+<td><a href="https://github.com/anthropics/skills">anthropics</a></td>
+<td><a href="https://github.com/openai/skills">openai</a></td>
+<td><a href="https://github.com/google-gemini/gemini-skills">gemini</a></td>
+<td><a href="https://github.com/huggingface/skills">huggingface</a></td>
+<td><a href="https://github.com/replicate/skills">replicates</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/elevenlabs/skills">elevenlabs</a></td>
+<td><a href="https://github.com/black-forest-labs/skills">black-forest-labs</a></td>
+<td><a href="https://github.com/google/skills">google</a></td>
+<td><a href="https://github.com/NVIDIA/skills">nvidia</a></td>
+<td></td>
+</tr>
+<tr><th colspan="5">☁️ クラウドサービスとインフラ</th></tr>
+<tr>
+<td><a href="https://github.com/cloudflare/skills">cloudflare</a></td>
+<td><a href="https://github.com/hashicorp/agent-skills">hashicorp</a></td>
+<td><a href="https://github.com/databricks/databricks-agent-skills">databricks</a></td>
+<td><a href="https://github.com/ClickHouse/agent-skills">clickhouse</a></td>
+<td><a href="https://github.com/supabase/agent-skills">supabase</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/stripe/ai">stripe</a></td>
+<td><a href="https://github.com/launchdarkly/agent-skills">launchdarkly</a></td>
+<td><a href="https://github.com/getsentry/skills">sentry</a></td>
+<td><a href="https://github.com/aws/agent-toolkit-for-aws">aws</a></td>
+<td><a href="https://github.com/amd/skills">amd</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/elastic/agent-skills">elastic</a></td>
+<td><a href="https://github.com/mongodb/agent-skills">mongodb</a></td>
+<td><a href="https://github.com/redis/agent-skills">redis</a></td>
+<td><a href="https://github.com/wandb/skills">wandb</a></td>
+<td></td>
+</tr>
+<tr><th colspan="5">🛠️ 開発フレームワークとツール</th></tr>
+<tr>
+<td><a href="https://github.com/vercel-labs/agent-skills">vercel</a></td>
+<td><a href="https://github.com/microsoft/skills">microsoft</a></td>
+<td><a href="https://github.com/expo/skills">expo</a></td>
+<td><a href="https://github.com/better-auth/skills">better-auth</a></td>
+<td><a href="https://github.com/posit-dev/skills">posit</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/remotion-dev/skills">remotion</a></td>
+<td><a href="https://github.com/slidevjs/slidev/tree/main/skills/slidev">slidev</a></td>
+<td><a href="https://github.com/vercel-labs/agent-browser/tree/main/skills">agent-browser</a></td>
+<td><a href="https://github.com/browser-use/browser-use/tree/main/skills">browser-use</a></td>
+<td><a href="https://github.com/firecrawl/cli">firecrawl</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/greensock/gsap-skills">gsap</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><th colspan="5">📝 コンテンツとコラボレーション</th></tr>
+<tr>
+<td><a href="https://github.com/makenotion/skills">notion</a></td>
+<td><a href="https://github.com/kepano/obsidian-skills">obsidian</a></td>
+<td><a href="https://github.com/WordPress/agent-skills">wordpress</a></td>
+<td><a href="https://github.com/langgenius/dify/tree/main/.claude/skills">dify</a></td>
+<td><a href="https://github.com/sanity-io/agent-toolkit/tree/main/skills">sanity</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/hardhackerlabs/podwise-cli">podwise-cli</a></td>
+<td><a href="https://github.com/wpsnote/wpsnote-skills">wps</a></td>
+<td><a href="https://github.com/marswaveai/skills">listenhub</a></td>
+<td><a href="https://github.com/larksuite/cli">lark</a></td>
+<td></td>
+</tr>
+</table>
 
-- [openai/plugins](https://github.com/openai/plugins)：Codex Plugin の例と公式ディレクトリです。
-- [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)：Anthropic が管理する Claude Code 公式 Plugin ディレクトリです。
-- [cursor/plugins](https://github.com/cursor/plugins) と [cursor/community-plugins](https://github.com/cursor/community-plugins)：Cursor 公式 Plugins とコミュニティディレクトリです。
-- [github/copilot-plugins](https://github.com/github/copilot-plugins)：GitHub Copilot 公式 Plugin コレクションです。
+## 厳選スキル
 
-### クライアント横断・分野別コレクション
+### プログラミング開発
 
-- [flutter/agent-plugins](https://github.com/flutter/agent-plugins)：Flutter チームが管理する Claude Code、Codex、Cursor 向け能力パッケージです。
-- [awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)：AWS の設計、デプロイ、運用タスク向け Agent Plugins です。
+-   [superpowers](https://github.com/obra/superpowers)：完全なプログラミングプロジェクトワークフローをカバー
+-   [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)：フロントエンドデザインスキル
+-   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：より洗練されたパーソナライズされた UI/UX デザイン
+-   [archify](https://github.com/tt-a1i/archify)：検証・エクスポート可能なアーキテクチャ図とフロー図
+-   [text-to-cad](https://github.com/earthtojake/text-to-cad)：CAD、CAE、CAM 向け Agent Skills
+-   [native-feel-skill](https://github.com/yetone/native-feel-skill)：クロスプラットフォーム・デスクトップアプリのネイティブ体験設計
 
-## Component エコシステム
+### コンテンツ制作
 
-Component は単独でも利用でき、標準 Plugin に組み込むこともできます。以下は高品質な発見入口だけを残しています。掲載、Star 数、形式検証は、セキュリティ監査やクライアント間互換性の認証を意味しません。
+-   [baoyu-skills](https://github.com/JimLiu/baoyu-skills)：宝玉の個人用 Skills コレクション（WeChat 記事執筆、PPT 作成など）
+-   [libukai](https://github.com/libukai/awesome-agent-skills)：Obsidian 関連スキルコレクション、Obsidian の執筆シーンに特化
+-   [guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill)：高品質な HTML スライド生成
+-   [cclank](https://github.com/cclank/news-aggregator-skill)：指定分野の最新情報を自動収集・要約
+-   [huangserva](https://github.com/huangserva/skill-prompt-generator)：AI 人物画像テキスト生成プロンプトを生成・最適化
+-   [dontbesilent](https://github.com/dontbesilent2025/dbskill)：X のインフルエンサーが自身のツイートをもとに制作したコンテンツ制作フレームワーク
+-   [seekjourney](https://github.com/geekjourneyx/md2wechat-skill/)：執筆から公開まで AI 支援の WeChat 記事作成
+-   [cangjie-skill](https://github.com/kangarooking/cangjie-skill)：書籍、動画、ポッドキャストを実行可能な Agent Skills に蒸留
 
-### Skills（標準コア Component）
+### 製品活用
 
-- [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)：大規模な Skill の発見、選択、検証、計画を支援するカタログとローカルツールチェーンです。
-- [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)：複数の Agent クライアントを対象とするコミュニティ Skill ディレクトリです。
-- [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills)：Agent Skills のチュートリアル、ガイド、ディレクトリです。
+-   [wps](https://github.com/wpsnote/wpsnote-skills)：WPS オフィスソフトを操作
+-   [notebooklm](https://github.com/teng-lin/notebooklm-py)：NotebookLM を操作
+-   [n8n](https://github.com/czlonkowski/n8n-skills)：n8n ワークフローを作成
+-   [threejs](https://github.com/cloudai-x/threejs-skills)：Three.js プロジェクト開発を支援
+-   [skills-manage](https://github.com/iamzhihuix/skills-manage)：複数の Agent ホスト間でローカル Skills を管理
 
-### MCP Servers（標準コア Component）
+### その他
 
-- [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)：幅広い MCP Server のコミュニティディレクトリです。
-- [yzfly/Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH)：中国語の MCP リソース、Server、Client ガイドです。
-- [wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers)：早期に作られ、継続的に管理されている MCP Server ディレクトリです。
-- [jaw9c/awesome-remote-mcp-servers](https://github.com/jaw9c/awesome-remote-mcp-servers)：ネットワーク経由で利用する Remote MCP Servers に特化したディレクトリです。
-- [punkpeye/awesome-mcp-devtools](https://github.com/punkpeye/awesome-mcp-devtools)：MCP の開発、テスト、デバッグ、検証ツールのディレクトリです。
+-  [pua](https://github.com/tanweai/pua)：PUA スタイルで AI をより一生懸命働かせる
+-   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：YC の視点から様々な起業アドバイスを提供
+-   [marketingskills](https://github.com/coreyhaines31/marketingskills)：マーケティング能力を強化
+-   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)：研究者のスキルを向上
 
-### Hooks（クライアント拡張 Component）
+## セキュリティ監査
 
-- [disler/claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery)：Claude Code Hooks を体系的に学ぶための例とチュートリアルです。
-- [karanb192/claude-code-hooks](https://github.com/karanb192/claude-code-hooks)：セキュリティ、コスト、可観測性、生産性向け Hooks と、インストール可能な Plugin Marketplace です。
-- [sondera-ai/sondera-coding-agent-hooks](https://github.com/sondera-ai/sondera-coding-agent-hooks)：Claude、Cursor、Gemini などの Coding Agent 向けクライアント横断 Hook 実装です。
-- [1Password/agent-hooks](https://github.com/1Password/agent-hooks)：1Password チームが管理する Agent Hook 実装です。
-- [ithiria894/awesome-claude-code-hooks](https://github.com/ithiria894/awesome-claude-code-hooks)：イベント駆動自動化に焦点を当てた Claude Code Hook ディレクトリです。
+Skill は受動的な文書ではありません。description は発見に影響し、本文は Agent の挙動を変え、スクリプトはファイル、ネットワーク、認証情報、外部アカウントへアクセスできます。来歴、内容、依存関係、権限、ランタイム、更新の6層を確認してください。
 
-## 掲載原則
+インストール前に `gh skill preview` または手動で全ファイルを確認し、tag/commit を固定します。実行時は最小権限、サンドボックス、重要操作の人間承認、監査ログを使用してください。ストア掲載、Star 数、仕様準拠だけでは安全性や有効性を証明できません。
 
-1. **標準を優先**：ルート `plugin.json` で Agent Plugins v1 の `$schema` を宣言するパッケージだけを、可搬 Plugin メインカタログに掲載します。
-2. **クライアント固有面を分離**：Host-native Plugin と Client extension は、形式、対応クライアント、非可搬部分を明記します。
-3. **Component を自動的に Plugin と呼ばない**：単独の Skills、MCP Servers、Hooks などは Component エコシステムに掲載します。
-4. **互換性を段階別に記述**：形式の妥当性、クライアントでの読み込み、Component の実行、セキュリティは異なる結論です。
-5. **十分な根拠を提示**：インストール方法、ライセンス、保守状況、最終確認日、主要なリスク面を提出してください。
+初期スキャンには [Cisco AI Defense Skill Scanner](https://github.com/cisco-ai-defense/skill-scanner) または [slowmist-agent-security](https://github.com/slowmist/slowmist-agent-security) を利用できます。[NVIDIA Verified Skills](https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/) の Skill Card、スキャン、署名、来歴管理も参考になります。スキャナーは人手レビューと隔離実行の代替ではありません。
 
-詳細は [CONTRIBUTING.md](../CONTRIBUTING.md) を参照してください。当面は README-first のカタログを維持し、新しいパッケージマネージャーやホスト型 Marketplace は構築しません。機械可読カタログと生成ツールは、掲載数と保守コストが必要性を示した段階で導入します。
+## スキルの作成
+
+技能ショップから他の人が作成したスキルを直接インストールできますが、適合度とパーソナライズを高めるため、必要に応じて自分でスキルを作成するか、他の人のものをベースに微調整することを強くお勧めします。
+
+### 設計原則
+
+- 実作業から抽出する：モデルの一般知識だけで曖昧な手順を生成せず、成功した手順、人間による修正、プロジェクト資料、障害事例、過去の修正を利用します。
+- 一貫した境界を保つ：1つの Skill は、組み合わせ可能で独立して検証できるタスク単位を扱います。狭すぎるとロードと競合のコストが増え、広すぎると正確に起動できません。
+- コンテキストを節約する：Agent が知らない、または間違えやすい内容に集中し、詳細は用途別の参照ファイルへ移して読み込む条件を明示します。
+- 制御の強さを調整する：壊れやすい、不可逆、順序依存の操作は厳密に指定し、複数の妥当な方法があるタスクでは目的と理由を説明して判断の余地を残します。
+- デフォルトを提示する：信頼できる既定手段と必要な回避策を示し、同列の選択肢や1回限りの回答ではなく再利用可能な手順を優先します。
+- フィードバックループを組み込む：Gotchas、出力テンプレート、チェックリスト、検証ループ、plan-validate-execute を活用します。
+
+### スクリプトとリソース
+
+既存ツールで安定して処理できる単純な一回限りの操作は、`SKILL.md` からコマンドを直接参照できます。繰り返す処理や複雑なロジックは、テスト済みの `scripts/` に移します。パスは Skill ルートからの相対パスを使い、各ファイルをいつ呼び出すか明記します。
+
+- 依存バージョンを固定し、実行環境やネットワーク要件を `compatibility` または本文に記載します。
+- 対話式入力を避け、引数、環境変数、stdin で入力を受け取り、簡潔な `--help` を提供します。
+- エラーを次の行動につながる内容にし、構造化データは stdout、診断や進捗は stderr に出力します。
+- `references/` 内のファイルは焦点を絞り、深い参照チェーンを避けます。
+
+公式の [Using scripts in skills](https://agentskills.io/skill-creation/using-scripts) ガイドも参照してください。
+
+### テストと評価
+
+Skill の評価は2つの観点に分けられます。**`description` 評価**では、使うべき場面で Agent が正しく Skill を起動し、使うべきでない場面では誤起動を避けられるかを確認します。**Skill 効果評価**では、ロード後にタスクの品質、安定性、効率が実際に向上するかを確認します。前者は「適切な Skill を見つけられるか」、後者は「見つけた Skill が本当に役立つか」を問うものです。明確な成功基準を持つ現実的なタスクで継続的に回帰テストし、Skill を使わない場合や旧バージョンと結果を比較します。
+
+完全な手順は、公式の[品質評価](https://agentskills.io/skill-creation/evaluating-skills)と[description 最適化](https://agentskills.io/skill-creation/optimizing-descriptions)を参照してください。
+
+- [SkillsBench](https://www.skillsbench.ai/)：クロスドメイン評価ベンチマークとランキング
+- [microsoft/waza](https://github.com/microsoft/waza)：Skill の作成、テスト、計測、改善
+- [microsoft/SkillOpt](https://github.com/microsoft/SkillOpt)：軌跡と検証セットに基づくテキスト最適化
+- [alibaba/skill-up](https://github.com/alibaba/skill-up)：評価と進化のツール
+- [rpamis/comet](https://github.com/rpamis/comet)：アイデアを評価済み Agent ワークフローへ反復
+
+既存研究が示す共通の結論は、明確な受け入れ基準と継続的な回帰テストを備えた、単一タスクに集中する Skill のほうが、範囲の広すぎる知識パッケージより一般に信頼できるということです。古い、またはタスクに適合しない Skill は、コストを増やし、成功率を下げる可能性があります。
 
 ## 特別謝辞
 
 ![](../assets/media/talk_is_cheap.jpg)
 
 ## プロジェクト履歴
-
-- 2026-08：Awesome Agent Skills から Awesome Agent Plugins への移行を開始し、「可搬標準を中心に、クライアント固有機能と単独 Component を分離する」構成を採用しました。
 
 [![](../assets/media/20260805233809.png)](https://www.star-history.com/?repos=libukai%2Fawesome-agent-skills&type=date&legend=top-left)
