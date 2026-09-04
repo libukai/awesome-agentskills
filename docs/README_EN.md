@@ -267,6 +267,10 @@ gh skill publish                                 # Validate and publish a Skill
 -   [threejs](https://github.com/cloudai-x/threejs-skills): Assist with Three.js development
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage): Manage local Skills across multiple agent hosts
 
+### Developer Marketing Skills
+
+- [dev-gtm-claude-skills](https://github.com/Infrasity-Labs/dev-gtm-claude-skills): Open-source, cross-platform agent skills for Claude Code and agentskills.io-compatible platforms. These skills are for SEO, GEO (Generative Engine Optimization), AI discoverability, and developer marketing. 
+
 ### Other Types
 
 -  [pua](https://github.com/tanweai/pua): Drive AI to work harder in a PUA style
