@@ -277,6 +277,7 @@ gh skill publish                                 # 校验并发布技能
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
+-   [NotFair](https://github.com/nowork-studio/NotFair)：面向 Claude Code 的开源营销技能集，覆盖 [SEO](https://github.com/nowork-studio/NotFair/tree/main/skills/seo)、[Google Ads](https://github.com/nowork-studio/NotFair/tree/main/skills/google-ads)、[Meta Ads](https://github.com/nowork-studio/NotFair/tree/main/skills/meta-ads)，通过 Google Ads MCP、Meta Ads MCP、Google Search Console MCP 和 Google Analytics (GA4) MCP 接入实时数据
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
 
 
