@@ -264,6 +264,7 @@ gh skill publish                                 # Validate and publish a Skill
 -   [wps](https://github.com/wpsnote/wpsnote-skills): Control WPS office software
 -   [notebooklm](https://github.com/teng-lin/notebooklm-py): Control NotebookLM
 -   [n8n](https://github.com/czlonkowski/n8n-skills): Create n8n workflows
+-   [routerbase-agent-skills](https://github.com/zenlee123/routerbase-agent-skills): Use [routerbase](https://routerbase.com/) as an OpenAI-compatible gateway for model routing and media generation
 -   [threejs](https://github.com/cloudai-x/threejs-skills): Assist with Three.js development
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage): Manage local Skills across multiple agent hosts
 
