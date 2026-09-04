@@ -260,6 +260,7 @@ gh skill publish                                 # 校验并发布技能
 -   [guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill)：歸藏创作的 HTML 幻灯片生成技能
 -   [cclank](https://github.com/cclank/news-aggregator-skill)：自动抓取和总结指定领域的最新资讯
 -   [huangserva](https://github.com/huangserva/skill-prompt-generator)：生成和优化 AI 人像文生图提示词
+-   [fabbo-ai-generator](https://github.com/fabbo-ai/fabbo-ai-generator)：驱动 Playwright 浏览器在 [fabbo.ai](https://fabbo.ai) 上生成 AI 视频和图片，支持文生视频、图生视频、文生图、参考图生视频、图片编辑等模式，覆盖 Veo、Sora、Kling、Wan、Luma、Runway、Midjourney、Nano Banana 等模型
 -   [dontbesilent](https://github.com/dontbesilent2025/dbskill)： X 万粉大V 基于自己的推文制作的内容创作框架
 -   [seekjourney](https://github.com/geekjourneyx/md2wechat-skill/)：从写作到发布的 AI 辅助公众号写作
 -   [cangjie-skill](https://github.com/kangarooking/cangjie-skill)：把书、视频和播客蒸馏为可执行的 Agent Skills
