@@ -1,9 +1,0 @@
-{
-  "name": "vscode-extensions-toolkit",
-  "version": "1.0.0",
-  "description": "Comprehensive toolkit for configuring VSCode extensions including httpYac for API testing, Port Monitor for development server monitoring, and SFTP for static website deployment. Use when users need to configure VSCode extensions, set up API testing workflows, monitor development ports, or deploy static sites.",
-  "author": {
-    "name": "libukai",
-    "email": "noreply@github.com"
-  }
-}

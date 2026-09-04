@@ -566,7 +566,7 @@ With skill:
 
 ### 使用 skill-creator Skill
 
-`skill-creator` skill——可在 Claude.ai 插件目录中获取，或下载用于 Claude Code——可以帮助你构建和迭代 Skills。如果你有一个 MCP 服务器并了解你的 2-3 个主要工作流程，你可以在单次会话中构建并测试一个功能性 Skill——通常只需 15-30 分钟。
+Anthropic 维护的 [`skill-creator`](https://github.com/anthropics/skills/tree/main/skills/skill-creator) Skill 可以帮助你构建和迭代 Skills。如果你有一个 MCP 服务器并了解你的 2-3 个主要工作流程，你可以在单次会话中构建并测试一个功能性 Skill——通常只需 15-30 分钟。
 
 **创建 Skills：**
 - 从自然语言描述生成 Skills
