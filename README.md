@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [Fact-Check-X](https://github.com/ASI2030/Fact-Check-X/tree/main/skills/fact-check-x-complete)：对比多个 AI 平台的完整回答与引用，并基于权威证据逐知识点核验
 
 
 ## 安全审查
