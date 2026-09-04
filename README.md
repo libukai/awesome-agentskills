@@ -272,6 +272,8 @@ gh skill publish                                 # 校验并发布技能
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage)：跨多种 Agent 管理本地 Skills
 
+-   [stipple-agent-skills](https://github.com/Sketchjar/stipple-agent-skills)：文档可信度验证技能集合 — 法证式文档真伪检测（篡改风险等级 + 逐信号证据）、引用来源验证、地面化字段抽取、AI 生成文本检测、AFP 100 点身份验证、负面新闻筛查、免费澳新招标搜索。7 个技能，匿名免费层无需注册
+
 ### 其他类型
 
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
