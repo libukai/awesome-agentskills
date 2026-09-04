@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [personal-understanding](https://github.com/caix84476-netizen/personal-understanding)：证据链式个人记忆技能——先把用户原话不动地保存（SHA-256 校验、不可变），再从原话推导事件、实体和因果假设，每条结论都能追溯到出处；本地优先、零依赖、中英双语。
 
 
 ## 安全审查
