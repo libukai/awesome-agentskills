@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [china-factory-search](https://github.com/InequalTech/china-factory-search)：在 480 万家经过识别的中国真实工厂中找厂、查档案、拿联系方式（天下工厂开放平台，MCP + REST）
 
 
 ## 安全审查
