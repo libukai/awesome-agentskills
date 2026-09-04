@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [buywhere-api](https://github.com/BuyWhere/buywhere-api)：跨平台的电商产品搜索引擎，提供实时价格对比和多平台优惠发现功能，支持 MCP 协议集成
 
 
 ## 安全审查
