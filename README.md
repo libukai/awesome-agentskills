@@ -277,6 +277,7 @@ gh skill publish                                 # 校验并发布技能
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
+-   [ndesv21/socialclaw](https://github.com/ndesv21/socialclaw)：通过单个工作区 API 密钥，跨 13 个平台（X、LinkedIn、Instagram、Facebook、TikTok、Discord、Telegram、YouTube、Reddit、WordPress、Pinterest）调度和发布社交媒体内容
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
 
 
