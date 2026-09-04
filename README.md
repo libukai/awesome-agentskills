@@ -278,6 +278,8 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [overloop-cli](https://github.com/sortlist/overloop-cli)：AI 驱动的出站销售引擎，从 4.5 亿+ 联系人中获取潜在客户，发起邮件和 LinkedIn 活动，JSON 输出，原生支持 Agent
+-   [signals-cli](https://github.com/sortlist/signals-cli)：意图信号监控，追踪 LinkedIn 互动者、关键词发布者、职位变动、融资事件，JSON 输出用于 Agent 管道
 
 
 ## 安全审查

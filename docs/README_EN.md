@@ -273,6 +273,8 @@ gh skill publish                                 # Validate and publish a Skill
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide startup advice from a YC perspective
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
+-   [overloop-cli](https://github.com/sortlist/overloop-cli): AI-powered outbound engine — source prospects from 450M+ contacts, launch email + LinkedIn campaigns, JSON output, agent-native
+-   [signals-cli](https://github.com/sortlist/signals-cli): Intent signal monitoring — LinkedIn engagers, keyword posters, job changers, funding events, JSON output for agent pipelines
 
 ## Security Audit
 
