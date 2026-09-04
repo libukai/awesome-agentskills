@@ -271,6 +271,7 @@ gh skill publish                                 # Validate and publish a Skill
 
 -  [pua](https://github.com/tanweai/pua): Drive AI to work harder in a PUA style
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide startup advice from a YC perspective
+-   [maoxuan-product-agent](https://github.com/atdy/maoxuan-product-agent): Chinese product decision Agent Skill distilled from the reasoning structures of *On Contradiction* and *On Practice*, covering requirements, growth, data, delivery, and collaboration
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
 

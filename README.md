@@ -276,6 +276,7 @@ gh skill publish                                 # 校验并发布技能
 
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
+-   [maoxuan-product-agent](https://github.com/atdy/maoxuan-product-agent)：从《矛盾论》《实践论》的推理结构蒸馏而来，面向需求、增长、数据、项目与协作问题的中文产品决策 Agent Skill
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
 
