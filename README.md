@@ -276,6 +276,7 @@ gh skill publish                                 # 校验并发布技能
 
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
+-   [claude-code-marketing-skills](https://github.com/cognyai/claude-code-marketing-skills)：AI 营销技能套件，包含 SEO 审计、落地页评审、竞品分析、广告文案、线索筛选等 5 个免费技能，高级技能通过 Cogny MCP 服务器连接真实广告账户
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
 
