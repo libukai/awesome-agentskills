@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [html-to-pdf](https://github.com/jamesxjz/html-to-pdf-agent-skill)：将远程 HTML 网页转换为 PDF，支持智能 SPA 检测、完整文档爬取和多页合并
 
 
 ## 安全审查
