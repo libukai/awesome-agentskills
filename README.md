@@ -268,6 +268,7 @@ gh skill publish                                 # 校验并发布技能
 
 -   [wps](https://github.com/wpsnote/wpsnote-skills)：操控 WPS 办公软件
 -   [notebooklm](https://github.com/teng-lin/notebooklm-py)：操控 NotebookLM 
+-   [remio](skills/remio)：通过 Remio 桌面客户端和 CLI 调用本地优先的 AI memory / 个人知识库，检索文件、网页、录音、邮件、消息、图片和笔记中的个人上下文
 -   [n8n](https://github.com/czlonkowski/n8n-skills)：创建 n8n 工作流
 -   [threejs](https://github.com/cloudai-x/threejs-skills)： 辅助开发 Three.js 项目
 -   [skills-manage](https://github.com/iamzhihuix/skills-manage)：跨多种 Agent 管理本地 Skills
