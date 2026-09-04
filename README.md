@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [openclaw-persona-forge](https://github.com/eamanc-lab/openclaw-persona-forge)：为 OpenClaw AI Agent 锻造完整的龙虾灵魂方案，支持引导式和抽卡模式，输出 SOUL.md、身份定位、规则和头像
 
 
 ## 安全审查
