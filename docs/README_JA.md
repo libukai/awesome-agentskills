@@ -272,6 +272,7 @@ gh skill publish                                 # Skill を検証して公開
 -  [pua](https://github.com/tanweai/pua)：PUA スタイルで AI をより一生懸命働かせる
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：YC の視点から様々な起業アドバイスを提供
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：マーケティング能力を強化
+-   [unifapi-agent/kol-pricing](https://github.com/unifapi-agent/skills/tree/main/skills/kol-pricing)：公開ソーシャルデータでクリエイター案件の価格を評価
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)：研究者のスキルを向上
 
 ## セキュリティ監査

@@ -272,6 +272,7 @@ gh skill publish                                 # Validate and publish a Skill
 -  [pua](https://github.com/tanweai/pua): Drive AI to work harder in a PUA style
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide startup advice from a YC perspective
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
+-   [unifapi-agent/kol-pricing](https://github.com/unifapi-agent/skills/tree/main/skills/kol-pricing): Price creator campaigns with public social data
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
 
 ## Security Audit

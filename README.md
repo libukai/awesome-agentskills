@@ -277,6 +277,7 @@ gh skill publish                                 # 校验并发布技能
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
+-   [unifapi-agent/kol-pricing](https://github.com/unifapi-agent/skills/tree/main/skills/kol-pricing)：基于公开社交数据评估创作者合作报价
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
 
 
