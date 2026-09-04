@@ -241,6 +241,7 @@ gh skill publish                                 # Validate and publish a Skill
 
 ### Programming & Development
 
+-   [ai-meeting-skill](https://github.com/bin1874/ai-meeting-skill): Organize multi-round AI meetings with Codex, Claude, and other agents while preserving per-agent sessions and producing structured final reports
 -   [superpowers](https://github.com/obra/superpowers): Complete programming project workflow
 -   [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design): Frontend design skills
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill): More refined and personalized UI/UX design
