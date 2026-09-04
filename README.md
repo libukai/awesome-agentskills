@@ -248,6 +248,7 @@ gh skill publish                                 # 校验并发布技能
 -   [superpowers](https://github.com/obra/superpowers)：涵盖完整编程项目工作流程
 -   [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)：前端设计技能
 -   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：更精致和个性化的 UI/UX 设计
+-   [uizze/anti-ui-slop](https://github.com/uizze/uizze/tree/main/skills/anti-ui-slop)：面向 Codex、Claude Code、Cursor、GitHub Copilot 和其他编码 Agent 的 UI 质量技能；在改 UI 前建立产品化设计契约、检查必要状态，并通过渲染复核拦截通用 AI 界面。可免费安装 `npx skills add https://uizze.com --skill anti-ui-slop`；完整 UIZZE 另提供基于 800,000+ 个真实 Web 和 iOS 界面的检索与审查能力
 -   [archify](https://github.com/tt-a1i/archify)：生成可验证、可导出的架构图与流程图
 -   [text-to-cad](https://github.com/earthtojake/text-to-cad)：面向 CAD、CAE 与 CAM 的工程技能库
 -   [native-feel-skill](https://github.com/yetone/native-feel-skill)：跨平台桌面应用的原生体验设计指南
