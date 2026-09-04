@@ -32,6 +32,18 @@
 
 ## 快速入门
 
+## OpenClaw Monitor
+
+| | |
+|---|---|
+| **Project** | [flik2002/openclaw-monitor](https://github.com/flik2002/openclaw-monitor) |
+| **Description** | Real-time AI agent monitoring dashboard — tracks Gateway status, sessions, token usage & trends |
+| **Stars** | ⭐ 1.3k+ |
+
+![Dashboard](https://raw.githubusercontent.com/flik2002/openclaw-monitor/main/Openclaw%20Monitor.jpg)
+
+
+
 Skill 是一种轻量级的 Agent 构建方案，通过封装特定的业务流程与行业知识，强化 AI 执行特定任务的专业能力。
 
 ![](assets/media/model-harness-skill.png)
