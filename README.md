@@ -277,6 +277,7 @@ gh skill publish                                 # 校验并发布技能
 -  [pua](https://github.com/tanweai/pua)：以 PUA 的方式驱动 AI 更卖力的干活
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
+-   [claude-persona](https://github.com/takechanman1228/claude-persona)：构建 AI 虚拟用户画像面板，用于消费者研究和产品概念测试，灵感来自 TinyTroupe
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
 
 
