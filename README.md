@@ -256,6 +256,15 @@ gh skill publish                                 # 校验并发布技能
 ### 内容创作
 
 -   [baoyu-skills](https://github.com/JimLiu/baoyu-skills)：宝玉的自用 SKills 集合，包括公众号写作、PPT 制作等
+-   [op7418](https://github.com/op7418?tab=repositories)：歸藏制作的一系列 Skills 集合，包括 PPT 制作、Youtube 分析等
+-   [wshuyi](https://github.com/wshuyi/x-article-publisher-skill): 王树义发布 X 文章的 Skill
+-   [huangserva](https://github.com/huangserva/skill-prompt-generator)：huangserva 使用 Skill 生成和优化 AI 人像文生图提示词的 Skill
+
+### 编程辅助
+
+-   [superpowers](https://github.com/obra/superpowers/tree/main/skills)：涵盖完整编程项目工作流程的 Skills 集合
+-   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：面向 UI/UX 设计的 Skills 集合
+-   [EmblemCompany/Agent-skills](https://github.com/EmblemCompany/Agent-skills)：面向多链加密钱包管理的 Skills 集合，支持 Solana/Ethereum/Base/BSC/Polygon/Hedera/Bitcoin，包含转账与兑换能力
 -   [libukai](https://github.com/libukai/awesome-agent-skills): Obsidian 相关技能集合，专门适配 Obsidian 的写作场景
 -   [guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill)：歸藏创作的 HTML 幻灯片生成技能
 -   [cclank](https://github.com/cclank/news-aggregator-skill)：自动抓取和总结指定领域的最新资讯
