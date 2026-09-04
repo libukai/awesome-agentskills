@@ -288,6 +288,8 @@ Skill 不只是文档：它的描述会影响检索和选择，正文会改变 A
 
 对于安全性要求较高的场景，可使用 [Cisco AI Defense Skill Scanner](https://github.com/cisco-ai-defense/skill-scanner) 或 @余弦的 [slowmist-agent-security skill](https://github.com/slowmist/slowmist-agent-security) 做初步扫描；同时参考 [NVIDIA Verified Skills](https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/) 的 Skill Card、扫描、签名和来源治理思路。扫描器只能提供信号，不能替代人工审查和隔离运行。
 
+如果需要在多个 Agent 之间安全协作，可以使用 [CoWorker Protocol](https://github.com/ZiwayZhao/agent-coworker) 实现 Skill-as-API —— 其他 Agent 只能调用你的技能拿到结果，看不到你的代码、提示词和内部逻辑。支持 4 层信任分层与自动降级、技能可见性控制（隐藏的技能对方连存在都不知道）、异步委托、SKILL.md 兼容（`coworker wrap` 一键保护现有 Skill）以及 MCP 桥接（`coworker mcp serve` 让 Claude Code 直接调用）。
+
 ## 创建技能
 
 虽然可以通过技能商店直接安装他人创建的技能，但是为了提升技能的适配度和个性化，强烈建议根据需要自己动手创建技能，或者在其他人的基础上进行微调。
