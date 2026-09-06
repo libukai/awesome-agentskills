@@ -278,6 +278,7 @@ gh skill publish                                 # 校验并发布技能
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：使用 YC 的视角提供各种创业建议
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能
+-   [market-brief](https://github.com/beepboop2025/market-brief/tree/v0.1.0/skills/market-brief)：读取公开资金市场与流动性数据，保留来源日期、缺失状态和披露限制；不执行交易
 
 
 ## 安全审查

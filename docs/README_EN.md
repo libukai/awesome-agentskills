@@ -273,6 +273,7 @@ gh skill publish                                 # Validate and publish a Skill
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide startup advice from a YC perspective
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
+-   [market-brief](https://github.com/beepboop2025/market-brief/tree/v0.1.0/skills/market-brief): Summarize public funding and liquidity evidence with source dates and explicit missing or withheld data; no trade execution
 
 ## Security Audit
 

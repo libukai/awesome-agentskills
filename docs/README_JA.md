@@ -273,6 +273,7 @@ gh skill publish                                 # Skill を検証して公開
 -   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours)：YC の視点から様々な起業アドバイスを提供
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：マーケティング能力を強化
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)：研究者のスキルを向上
+-   [market-brief](https://github.com/beepboop2025/market-brief/tree/v0.1.0/skills/market-brief)：公開の短期金融市場・流動性データを要約し、出典の日時と欠落・非公開の状態を保持。取引は実行しない
 
 ## セキュリティ監査
 
